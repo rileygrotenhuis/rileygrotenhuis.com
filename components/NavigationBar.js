@@ -31,7 +31,7 @@ export default function NavigationBar() {
 
   return (
     <AppBar position="static">
-        <Container maxWidth="xl">
+        <Container maxWidth="xl" style={{ width: '80%', }}>
             <Toolbar disableGutters>
             <Typography
                 variant="h6"
@@ -133,14 +133,14 @@ export default function NavigationBar() {
                 <Button
                     href="/projects"
                     onClick={handleCloseNavMenu}
-                    sx={{ my: 2, color: 'white', display: 'block' }}
+                    sx={{ mr: 5, my: 2, color: 'white', display: 'block' }}
                 >
                     Projects
                 </Button>
                 <Button
                     href="/employment"
                     onClick={handleCloseNavMenu}
-                    sx={{ my: 2, color: 'white', display: 'block' }}
+                    sx={{ mr: 5, my: 2, color: 'white', display: 'block' }}
                 >
                     Employment
                 </Button>
