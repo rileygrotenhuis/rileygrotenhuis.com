@@ -79,17 +79,35 @@ export default function NavigationBar() {
                     }}
                 >
                     <MenuItem onClick={handleCloseNavMenu}>
-                        <Link href="/projects">
+                        <Link 
+                            href="/projects"
+                            style={{
+                                color: 'inherit',
+                                textDecoration: 'none',
+                            }}
+                        >
                             <Typography textAlign="center">Projects</Typography>
                         </Link>
                     </MenuItem>
                     <MenuItem onClick={handleCloseNavMenu}>
-                        <Link href="/employment">
+                        <Link 
+                            href="/employment"
+                            style={{
+                                color: 'inherit',
+                                textDecoration: 'none',
+                            }}
+                        >
                             <Typography textAlign="center">Employment</Typography>
                         </Link>
                     </MenuItem>
                     <MenuItem onClick={handleCloseNavMenu}>
-                        <Link href="/blog">
+                        <Link 
+                            href="/blog"
+                            style={{
+                                color: 'inherit',
+                                textDecoration: 'none',
+                            }}
+                        >
                             <Typography textAlign="center">Blog</Typography>
                         </Link>
                     </MenuItem>
@@ -111,7 +129,7 @@ export default function NavigationBar() {
             >
                 Riley Grotenhuis
             </Typography>
-            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            <Box sx={{ justifyContent: 'right', flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                 <Button
                     href="/projects"
                     onClick={handleCloseNavMenu}
