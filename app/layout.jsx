@@ -5,6 +5,7 @@ import { CssBaseline } from '@mui/material';
 import theme from '../styles/theme';
 
 import NavigationBar from '../components/NavigationBar';
+import { Container } from '@mui/system';
 
 export default function RootLayout({ children }) {
 	return (
@@ -14,7 +15,9 @@ export default function RootLayout({ children }) {
 				<CssBaseline />
 				<body>
 					<NavigationBar />
-					{children}
+					<Container maxWidth="xl" style={{ width: '80%', marginTop: '25px' }}>
+						{children}
+					</Container>
 				</body>
 			</ThemeProvider>
 		</html>
