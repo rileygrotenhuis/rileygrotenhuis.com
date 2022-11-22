@@ -78,39 +78,39 @@ export default function NavigationBar() {
                         display: { xs: 'block', md: 'none' },
                     }}
                 >
-                    <MenuItem onClick={handleCloseNavMenu}>
-                        <Link 
-                            href="/projects"
-                            style={{
-                                color: 'inherit',
-                                textDecoration: 'none',
-                            }}
-                        >
+                    <Link 
+                        href="/projects"
+                        style={{
+                            color: 'inherit',
+                            textDecoration: 'none',
+                        }}
+                    >
+                        <MenuItem onClick={handleCloseNavMenu}>
                             <Typography textAlign="center">Projects</Typography>
-                        </Link>
-                    </MenuItem>
-                    <MenuItem onClick={handleCloseNavMenu}>
-                        <Link 
-                            href="/employment"
-                            style={{
-                                color: 'inherit',
-                                textDecoration: 'none',
-                            }}
-                        >
+                        </MenuItem>
+                    </Link>
+                    <Link 
+                        href="/employment"
+                        style={{
+                            color: 'inherit',
+                            textDecoration: 'none',
+                        }}
+                    >
+                        <MenuItem onClick={handleCloseNavMenu}>
                             <Typography textAlign="center">Employment</Typography>
-                        </Link>
-                    </MenuItem>
-                    <MenuItem onClick={handleCloseNavMenu}>
-                        <Link 
-                            href="/blog"
-                            style={{
-                                color: 'inherit',
-                                textDecoration: 'none',
-                            }}
-                        >
+                        </MenuItem>
+                    </Link>
+                    <Link
+                        href="/blog"
+                        style={{
+                            color: 'inherit',
+                            textDecoration: 'none',
+                        }}
+                    >
+                        <MenuItem onClick={handleCloseNavMenu}>
                             <Typography textAlign="center">Blog</Typography>
-                        </Link>
-                    </MenuItem>
+                        </MenuItem>
+                    </Link>
                 </Menu>
             </Box> 
             <Typography
@@ -130,27 +130,30 @@ export default function NavigationBar() {
                 Riley Grotenhuis
             </Typography>
             <Box sx={{ justifyContent: 'right', flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                <Button
-                    href="/projects"
-                    onClick={handleCloseNavMenu}
-                    sx={{ mr: 5, my: 2, color: 'white', display: 'block' }}
-                >
-                    Projects
-                </Button>
-                <Button
-                    href="/employment"
-                    onClick={handleCloseNavMenu}
-                    sx={{ mr: 5, my: 2, color: 'white', display: 'block' }}
-                >
-                    Employment
-                </Button>
-                <Button
-                    href="/blog"
-                    onClick={handleCloseNavMenu}
-                    sx={{ my: 2, color: 'white', display: 'block' }}
-                >
-                    Blog
-                </Button>
+                <Link href="/projects">
+                    <Button
+                        onClick={handleCloseNavMenu}
+                        sx={{ mr: 5, my: 2, color: 'white', display: 'block' }}
+                    >
+                        Projects
+                    </Button>
+                </Link>
+                <Link href="/employment">
+                    <Button
+                        onClick={handleCloseNavMenu}
+                        sx={{ mr: 5, my: 2, color: 'white', display: 'block' }}
+                    >
+                        Employment
+                    </Button>
+                </Link>
+                <Link href="/blog">
+                    <Button
+                        onClick={handleCloseNavMenu}
+                        sx={{ my: 2, color: 'white', display: 'block' }}
+                    >
+                        Blog
+                    </Button>
+                </Link>
             </Box>
             </Toolbar>
         </Container>
