@@ -130,7 +130,13 @@ export default function NavigationBar() {
                 Riley Grotenhuis
             </Typography>
             <Box sx={{ justifyContent: 'right', flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                <Link href="/projects">
+                <Link 
+                    href="/projects"
+                    style={{
+                        color: 'inherit',
+                        textDecoration: 'none',
+                    }}
+                >
                     <Button
                         onClick={handleCloseNavMenu}
                         sx={{ mr: 5, my: 2, color: 'white', display: 'block' }}
@@ -138,7 +144,13 @@ export default function NavigationBar() {
                         Projects
                     </Button>
                 </Link>
-                <Link href="/employment">
+                <Link 
+                    href="/employment"
+                    style={{
+                        color: 'inherit',
+                        textDecoration: 'none',
+                    }}
+                >
                     <Button
                         onClick={handleCloseNavMenu}
                         sx={{ mr: 5, my: 2, color: 'white', display: 'block' }}
@@ -146,7 +158,13 @@ export default function NavigationBar() {
                         Employment
                     </Button>
                 </Link>
-                <Link href="/blog">
+                <Link 
+                    href="/blog"
+                    style={{
+                        color: 'inherit',
+                        textDecoration: 'none',
+                    }}
+                >
                     <Button
                         onClick={handleCloseNavMenu}
                         sx={{ my: 2, color: 'white', display: 'block' }}
