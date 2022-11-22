@@ -33,21 +33,25 @@ export default function NavigationBar() {
     <AppBar position="static">
         <Container maxWidth="xl" style={{ width: '80%', }}>
             <Toolbar disableGutters>
-            <Typography
-                variant="h6"
-                noWrap
-                component="a"
+            <Link
                 href="/"
-                sx={{
-                    mr: 2,
-                    display: { xs: 'none', md: 'flex' },
-                    letterSpacing: '.3rem',
+                style={{
                     color: 'inherit',
                     textDecoration: 'none',
                 }}
             >
-                Riley Grotenhuis
-            </Typography>
+                <Typography
+                    variant="h6"
+                    noWrap
+                    sx={{
+                        mr: 2,
+                        display: { xs: 'none', md: 'flex' },
+                        letterSpacing: '.3rem',
+                    }}
+                >
+                    Riley Grotenhuis
+                </Typography>
+            </Link>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                 <IconButton
