@@ -79,14 +79,14 @@ export default function NavigationBar() {
                         }}
                     >
                         <Link 
-                            href="/projects"
+                            href="/about"
                             style={{
                                 color: 'inherit',
                                 textDecoration: 'none',
                             }}
                         >
                             <MenuItem onClick={handleCloseNavMenu}>
-                                <Typography textAlign="center">Projects</Typography>
+                                <Typography textAlign="center">About</Typography>
                             </MenuItem>
                         </Link>
                         <Link 
@@ -131,7 +131,7 @@ export default function NavigationBar() {
                 </Typography>
                 <Box sx={{ justifyContent: 'right', flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                     <Link 
-                        href="/projects"
+                        href="/about"
                         style={{
                             color: 'inherit',
                             textDecoration: 'none',
@@ -141,7 +141,7 @@ export default function NavigationBar() {
                             onClick={handleCloseNavMenu}
                             sx={{ mr: 5, my: 2, color: 'white', display: 'block' }}
                         >
-                            Projects
+                            About
                         </Button>
                     </Link>
                     <Link 
