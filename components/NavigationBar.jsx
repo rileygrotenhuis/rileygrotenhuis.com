@@ -34,7 +34,18 @@ export default function NavigationBar() {
                 boxShadow: 'none' 
             }}
         >
-            <Container maxWidth="xl" style={{ width: '60%', }}>
+            <Container 
+                maxWidth="xl" 
+                sx={{ 
+                    width: {
+                        xl: '60%',
+                        lg: '80%',
+                        md: '80%',
+                        sm: '80%',
+                        xs: '90%',
+                    },
+                }}
+            >
                 <Toolbar disableGutters>
                 <Link
                     href="/"
