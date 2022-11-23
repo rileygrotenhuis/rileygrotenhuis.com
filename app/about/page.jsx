@@ -2,13 +2,6 @@
 
 import React from 'react';
 import { Grid, Typography } from "@mui/material";
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import Link from 'next/link';
-import Image from 'next/image';
-import ProfileImage from '../../public/ProfileImage.jpeg';
 
 export default function About() {
 	return (
