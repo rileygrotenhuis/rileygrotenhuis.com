@@ -26,7 +26,14 @@ export default function NavigationBar() {
     };
 
     return (
-        <AppBar position="static">
+        <AppBar 
+            position="static" 
+            style={{ 
+                background: 'none', 
+                border: 'none',
+                boxShadow: 'none' 
+            }}
+        >
             <Container maxWidth="xl" style={{ width: '80%', }}>
                 <Toolbar disableGutters>
                 <Link
