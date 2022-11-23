@@ -128,22 +128,24 @@ export default function NavigationBar() {
                         </Link>
                     </Menu>
                 </Box> 
-                <Typography
-                    variant="h5"
-                    noWrap
-                    component="a"
-                    href=""
-                    sx={{
+                <Link
+                    href="/"
+                    style={{
+                        color: 'inherit',
+                        textDecoration: 'none',
                         mr: 2,
                         display: { xs: 'flex', md: 'none' },
                         flexGrow: 1,
                         letterSpacing: '.3rem',
-                        color: 'inherit',
-                        textDecoration: 'none',
                     }}
                 >
-                    Riley Grotenhuis
-                </Typography>
+                    <Typography
+                        variant="h5"
+                        noWrap
+                    >
+                        Riley Grotenhuis
+                    </Typography>
+                </Link>
                 <Box sx={{ justifyContent: 'right', flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                     <Link 
                         href="/about"
