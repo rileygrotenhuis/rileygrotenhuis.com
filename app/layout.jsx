@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
 			<head />
 			<ThemeProvider theme={theme}>
 				<CssBaseline />
-				<body>
+				<body style={{ paddingBottom: '100px' }}>
 					<NavigationBar />
 					<Container 
 						maxWidth="xl" 
