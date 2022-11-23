@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
 				<CssBaseline />
 				<body>
 					<NavigationBar />
-					<Container maxWidth="xl" style={{ width: '80%', marginTop: '25px' }}>
+					<Container maxWidth="xl" style={{ width: '60%', marginTop: '25px' }}>
 						{children}
 					</Container>
 				</body>

@@ -12,7 +12,15 @@ const theme = createTheme({
 		homePageSubtitle: {
 			fontSize: '1.5rem',
 			fontWeight: 'normal',
-		}
+		},
+		aboutPageTitle: {
+			fontSize: '3rem',
+			fontWeight: 'bold',
+		},
+		aboutPageText: {
+			fontSize: '1.5rem',
+			fontWeight: 'lighter',
+		},
 	},
 });
 
