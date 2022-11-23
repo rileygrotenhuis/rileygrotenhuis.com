@@ -12,8 +12,15 @@ import ProfileImage from '../../public/ProfileImage.jpeg';
 
 export default function About() {
 	return (
-		<Grid container>
-			<Grid item={9} alignItems="center">
+		<Grid 
+			container 
+			spacing={6}
+			justifyContent="center" 
+			sx={{ 
+				marginTop: '125px' 
+			}}
+		>
+			<Grid item={9} sx={{ height: 'fit-content', margin: 'auto 0' }}>
 				<Grid item xs={12}>
 					<Typography variant="homePageTitle">Hello I'm Riley</Typography>
 				</Grid>
@@ -22,7 +29,7 @@ export default function About() {
 						I'm a software engineer based in Springfield, Missouri.
 					</Typography>
 				</Grid>
-				<Grid item xs={12} sx={{ display: 'flex', gap: '50px' }}>
+				<Grid item xs={12} sx={{ display: 'flex', gap: '50px', marginTop: '25px' }}>
 					<Grid item>
 						<Link 
 							href="https://github.com/rileygrotenhuis"
