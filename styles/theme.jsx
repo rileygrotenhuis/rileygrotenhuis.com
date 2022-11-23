@@ -14,7 +14,7 @@ const theme = createTheme({
 			fontWeight: 'normal',
 		},
 		aboutPageTitle: {
-			fontSize: '3rem',
+			fontSize: '2.5rem',
 			fontWeight: 'bold',
 		},
 		aboutPageText: {
