@@ -17,7 +17,7 @@ export default function Home() {
 			spacing={6}
 			justifyContent="center" 
 			sx={{ 
-				marginTop: '125px' 
+				marginTop: '7.5%'
 			}}
 		>
 			<Grid item={9} sx={{ height: 'fit-content', margin: 'auto 0' }}>

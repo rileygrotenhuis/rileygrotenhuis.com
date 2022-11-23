@@ -25,7 +25,6 @@ export default function RootLayout({ children }) {
 								sm: '80%',
 								xs: '90%',
 							},
-							marginTop: '25px' 
 						}}
 					>
 						{children}
