@@ -134,14 +134,16 @@ export default function NavigationBar() {
                         color: 'inherit',
                         textDecoration: 'none',
                         mr: 2,
-                        display: { xs: 'flex', md: 'none' },
                         flexGrow: 1,
-                        letterSpacing: '.3rem',
                     }}
                 >
                     <Typography
                         variant="h5"
                         noWrap
+                        sx={{
+                            display: { xs: 'flex', md: 'none' },
+                            letterSpacing: '.3rem',
+                        }}
                     >
                         Riley Grotenhuis
                     </Typography>
