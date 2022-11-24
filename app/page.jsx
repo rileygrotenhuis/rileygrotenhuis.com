@@ -12,9 +12,79 @@ import ProfileImage from '../public/ProfileImage.jpeg';
 
 export default function Home() {
 	return (
-		<Grid container spacing={1}>
-			<Grid item xs={12}>
-				<Typography variant="heroTitle">Riley</Typography>
+		<Grid 
+			container
+			width="fit-content"
+			display="flex"
+			margin="auto"
+			gap="50px"
+			justifyContent="center"
+			sx={{
+				marginTop: "10%",
+				flexDirection: {
+					md: 'row',
+					xs: 'column-reverse',
+				},
+			}}
+
+		>
+			<Grid item 
+				display="flex" 
+				flexDirection="column"
+				gap="18px"
+				margin="auto 0"
+				sx={{
+					textAlign: {
+						md: 'left',
+						xs: 'center',
+					},
+				}}
+			>
+				<Typography variant="heroTitle">Hi, I'm Riley</Typography>
+				<Typography variant="heroSubtitle">
+					I'm a software engineer based out of Springfield, MO
+				</Typography>
+				<Grid 
+					container 
+					display="flex"
+					gap="50px"
+					sx={{
+						width: 'fit-content',
+						margin: {
+							md: '0',
+							xs: '0 auto',
+						},
+					}}
+				>
+					<Grid item>
+						<GitHubIcon />
+					</Grid>
+					<Grid item>
+						<LinkedInIcon />
+					</Grid>
+					<Grid item>
+						<TwitterIcon />
+					</Grid>
+					<Grid item>
+						<InstagramIcon />
+					</Grid>
+				</Grid>
+			</Grid>
+			<Grid item 
+				sx={{
+					margin: 'auto',
+				}}
+			>
+				<Image 
+					alt='ProfileImage' 
+					src={ProfileImage} placeholder="blur"
+					height={250}
+					width={250}
+					style={{
+						borderRadius: '100%',
+						boxShadow: '0 0 5px 2px #282a2d',
+					}}
+				/>
 			</Grid>
 		</Grid>
 	);
