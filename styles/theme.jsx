@@ -13,6 +13,14 @@ const theme = createTheme({
 			fontSize: '1.5rem',
 			fontWeight: 'normal',
 		},
+		pageTitle: {
+			fontSize: '3rem',
+			fontWeight: 'bold',
+		},
+		pageText: {
+			fontSize: '1.35rem',
+			fontWeight: 'normal',
+		}
 	},
 });
 

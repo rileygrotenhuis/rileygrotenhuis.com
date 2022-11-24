@@ -28,7 +28,8 @@ export default function NavigationBar() {
             style={{ 
                 background: 'none', 
                 border: 'none',
-                boxShadow: 'none' 
+                boxShadow: 'none',
+                marginBottom: '30px'
             }}
         >
             <Container maxWidth="xl" disableGutters>
