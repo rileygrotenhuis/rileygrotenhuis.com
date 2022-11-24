@@ -57,16 +57,52 @@ export default function Home() {
 					}}
 				>
 					<Grid item>
-						<GitHubIcon />
+						<Link
+							href="https://www.github.com/rileygrotenhuis"
+							target="__blank"
+							style={{
+								color: 'inherit',
+								textDecoration: 'none',
+							}}
+						>
+							<GitHubIcon />
+						</Link>
 					</Grid>
 					<Grid item>
-						<LinkedInIcon />
+						<Link
+							href="https://www.linkedin.com/in/rileygrotenhuis"
+							target="__blank"
+							style={{
+								color: 'inherit',
+								textDecoration: 'none',
+							}}
+						>
+							<LinkedInIcon />
+						</Link>
 					</Grid>
 					<Grid item>
-						<TwitterIcon />
+						<Link
+							href="https://www.twitter.com/ryleygrotenhuis"
+							target="__blank"
+							style={{
+								color: 'inherit',
+								textDecoration: 'none',
+							}}
+						>
+							<TwitterIcon />
+						</Link>
 					</Grid>
 					<Grid item>
-						<InstagramIcon />
+						<Link
+							href="https://www.instagram.com/rileygrotenhuis"
+							target="__blank"
+							style={{
+								color: 'inherit',
+								textDecoration: 'none',
+							}}
+						>
+							<InstagramIcon />
+						</Link>
 					</Grid>
 				</Grid>
 			</Grid>
