@@ -7,7 +7,7 @@ export default function Employment() {
 	return (
 		<Grid container spacing={1}>
 			<Grid item xs={12}>
-				<Typography variant="h3">Employment History</Typography>
+				<Typography variant="heroTitle">Employment</Typography>
 			</Grid>
 		</Grid>
 	);

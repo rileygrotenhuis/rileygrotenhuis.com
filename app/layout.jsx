@@ -11,26 +11,13 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">			
 			<head />
-			<ThemeProvider theme={theme}>
-				<CssBaseline />
-				<body style={{ paddingBottom: '100px' }}>
+			<body>
+				<ThemeProvider theme={theme}>
+					<CssBaseline />
 					<NavigationBar />
-					<Container 
-						maxWidth="xl" 
-						sx={{ 
-							width: {
-								xl: '60%',
-								lg: '80%',
-								md: '80%',
-								sm: '80%',
-								xs: '90%',
-							},
-						}}
-					>
-						{children}
-					</Container>
-				</body>
-			</ThemeProvider>
+					{children}
+				</ThemeProvider>
+			</body>
 		</html>
 	);
 };

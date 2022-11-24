@@ -5,21 +5,13 @@ const theme = createTheme({
 		mode: 'dark'
 	},
 	typography: {
-		homePageTitle: {
+		heroTitle: {
 			fontSize: '4rem',
 			fontWeight: 'bold',
 		},
-		homePageSubtitle: {
+		heroSubtitle: {
 			fontSize: '1.5rem',
 			fontWeight: 'normal',
-		},
-		aboutPageTitle: {
-			fontSize: '2.5rem',
-			fontWeight: 'bold',
-		},
-		aboutPageText: {
-			fontSize: '1.5rem',
-			fontWeight: 'lighter',
 		},
 	},
 });
