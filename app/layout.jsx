@@ -14,8 +14,10 @@ export default function RootLayout({ children }) {
 			<body>
 				<ThemeProvider theme={theme}>
 					<CssBaseline />
-					<NavigationBar />
-					{children}
+					<Container>
+						<NavigationBar />
+						{children}
+					</Container>
 				</ThemeProvider>
 			</body>
 		</html>
