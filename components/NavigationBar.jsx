@@ -31,7 +31,7 @@ export default function NavigationBar() {
                 boxShadow: 'none' 
             }}
         >
-            <Container maxWidth="xl">
+            <Container maxWidth="xl" disableGutters>
                 <Toolbar disableGutters>
                 <Link
                     href="/"
