@@ -10,6 +10,9 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import Link from 'next/link';
+import Image from 'next/image';
+import Logo from '../public/Logo.png';
+import Grid from '@mui/material/Grid';
 
 export default function NavigationBar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -41,17 +44,19 @@ export default function NavigationBar() {
                         textDecoration: 'none',
                     }}
                 >
-                    <Typography
-                        variant="h6"
-                        noWrap
-                        sx={{
-                            mr: 2,
-                            display: { xs: 'none', md: 'flex' },
-                            letterSpacing: '.3rem',
-                        }}
-                    >
-                        Riley Grotenhuis
-                    </Typography>
+                    <Grid sx={{ display: { xs: 'none', md: 'flex' } }}>
+                        <Image 
+                            alt="Logo"
+                            src={Logo}
+                            placeholder="blur"
+                            width={50}
+                            height={50}
+                            style={{
+                                display: 'flex',
+                                margin: 'auto',
+                            }}
+                        />
+                    </Grid>
                 </Link>
 
                 <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -127,16 +132,19 @@ export default function NavigationBar() {
                         flexGrow: 1,
                     }}
                 >
-                    <Typography
-                        variant="h5"
-                        noWrap
-                        sx={{
-                            display: { xs: 'flex', md: 'none' },
-                            letterSpacing: '.3rem',
-                        }}
-                    >
-                        Riley Grotenhuis
-                    </Typography>
+                    <Grid sx={{ display: { xs: 'flex', md: 'none' } }}>
+                        <Image 
+                            alt="Logo"
+                            src={Logo}
+                            placeholder="blur"
+                            width={50}
+                            height={50}
+                            style={{
+                                display: 'flex',
+                                margin: 'auto',
+                            }}
+                        />
+                    </Grid>
                 </Link>
                 <Box sx={{ justifyContent: 'right', flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                     <Link 
