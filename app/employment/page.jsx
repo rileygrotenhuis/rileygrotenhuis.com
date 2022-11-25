@@ -1,11 +1,13 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Grid, Typography, List, ListItem, Card } from "@mui/material";
 import Image from 'next/image';
-import MissouriStateLogo from '../../public/MissouriStateLogo.png';
+import employmentData from '../../content/employment.json';
 
 export default function Employment() {
+	const [currentEmployment, setCurrentEmployment] = useState(1);
+
 	return (
 		<Card
 			style={{
@@ -16,10 +18,9 @@ export default function Employment() {
 			<Grid container>
 				<Grid item xs={12} lg={4} margin="auto">
 					<Image
-						alt="MissouriStateLogo"
-						src={MissouriStateLogo}
-						placeholder="blur"
+						src={employmentData.data[currentEmployment].logo}
 						width={300}
+						height={300}
 						style={{
 							display: 'flex',
 							margin: 'auto',
@@ -33,27 +34,19 @@ export default function Employment() {
 					display="flex"
 					flexDirection="column"
 				>
-					<Typography variant="pageTitle">Missouri State University</Typography>
+					<Typography variant="pageTitle">{employmentData.data[currentEmployment].company}</Typography>
 					<Typography variant="pageSubtitle">
-						Student Web Developer | 
-						<em> January 2021 - November 2022</em>
+						{employmentData.data[currentEmployment].position} | 
+						<em> {employmentData.data[currentEmployment].dates}</em>
 					</Typography>
 					<List>
-						<ListItem>
-							<Typography variant="pageText">
-								The Web Strategy and Development department at Missouri State University leads the design, development, and maintenance process for web applications used by thousands of faculty, staff, and students at the university.
-							</Typography>
-						</ListItem>
-						<ListItem>
-							<Typography variant="pageText">
-								I lead the project to create a migration platform for transferring web component assets from one content management system to another.
-							</Typography>
-						</ListItem>
-						<ListItem>
-							<Typography variant="pageText">
-								I assisted in adding new features and enhancements to the Student Employment Administrative tool, which was used to process, view, and review clearance forms to allow them to work at the university.
-							</Typography>
-						</ListItem>
+						{employmentData.data[currentEmployment].content.map((content) => {
+							return (
+								<ListItem>
+									<Typography variant="pageText">{content}</Typography>
+								</ListItem>
+							);
+						})}
 					</List>
 				</Grid>
 			</Grid>

@@ -5,9 +5,11 @@
             "position": "Software Engineer",
             "dates": "November 2021 - Present",
             "content": [
+                "Midwestern Interactive is a company dedicated to providing embedded teams for strategic planning, design, development, and implementation of software, apps, branding, and content processes.",
+                "Midwestern Interactive is a company dedicated to providing embedded teams for strategic planning, design, development, and implementation of software, apps, branding, and content processes.",
                 "Midwestern Interactive is a company dedicated to providing embedded teams for strategic planning, design, development, and implementation of software, apps, branding, and content processes."
             ],
-            "logo": "../../public/MWILogo.svg"
+            "logo": "/MWILogo.svg"
         },
         {
             "company": "Missouri State University",
@@ -18,7 +20,7 @@
                 "I lead the project to create a migration platform for transferring web component assets from one content management system to another.",
                 "I assisted in adding new features and enhancements to the Student Employment Administrative tool, which was used to process, view, and review clearance forms to allow them to work at the university."
             ],
-            "logo": "../../public/MissouriStateLogo.png"
+            "logo": "/MissouriStateLogo.png"
         }
     ]
 }
