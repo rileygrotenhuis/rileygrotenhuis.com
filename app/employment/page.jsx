@@ -8,7 +8,7 @@ import Image from 'next/image';
 import employmentData from '../../content/employment.json';
 
 export default function Employment() {
-	const [currentEmployment, setCurrentEmployment] = useState(1);
+	const [currentEmployment, setCurrentEmployment] = useState(0);
 
 	return (
 		<Grid container>
