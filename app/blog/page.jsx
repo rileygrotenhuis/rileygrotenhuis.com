@@ -7,7 +7,7 @@ export default function Blog() {
 	return (
 		<Grid container>
 			<Grid item>
-				<Typography variant="pageTitle">Blog</Typography>
+				<Typography variant="pageTitle">Blog (coming soon...)</Typography>
 			</Grid>
 		</Grid>
 	);
