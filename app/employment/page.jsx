@@ -38,6 +38,12 @@ export default function Employment() {
 							lg={8}
 							display="flex"
 							flexDirection="column"
+							sx={{
+								textAlign: {
+									xs: 'center',
+									lg: 'left',
+								}
+							}}
 						>
 							<Typography variant="pageTitle">{employmentData.data[currentEmployment].company}</Typography>
 							<Typography variant="pageSubtitle">
