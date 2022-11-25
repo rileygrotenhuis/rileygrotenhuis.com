@@ -16,17 +16,17 @@ export default function About() {
 			</Grid>
 			<Grid item>
 				<Typography variant="pageText">
-					Growing up I’ve always had the itch to work in a creative field that also allowed me to use the analytical part of my brain. I grew up playing any instrument I could pick up while failing at writing the next hit screenplay or book, but I also was constantly playing video games or learning all of the ins and outs of my family’s computer at home. When I randomly decided to take a computer science course in high school I found that programming was the perfect balance of these two passions of mine, and since then I was hooked.
+					My name is Riley Grotenhuis and I am a software engineer for Midwestern Interactive, a company dedicated to providing embedded teams for strategic planning, design, development, and implementation of software, apps, branding, and content processes.
 				</Typography>
 			</Grid>
 			<Grid item>
 				<Typography variant="pageText">
-					I continued to take the remaining computer science courses offered at my high school while simultaneously taking any sort of online courses I could about web development and programming in general. I went on to study Computer Science at Missouri State University where I also worked as a Web Works Student Programmer for the university’s Web Strategy & Development department. My education and work experience at Missouri State University allowed me to propel forward in my career in ways that I could’ve never imagined for where I was in my life.
+					I began my study of Computer Science at Missouri State University in the Fall semester of 2019 where I also began my career working for the university as a student web developer. I attended classes and worked for the university until I was offered a full-time role at Midwestern Interactive at the end of 2021 after building my portfolio with a multitude of personal projects.
 				</Typography>
 			</Grid>
 			<Grid item>
 				<Typography variant="pageText">
-					Today I am working full-time as a Software Engineer for Midwestern Interactive, a company dedicated to providing embedded teams for strategic planning, design, development, and implementation of software, apps, branding, and content processes.
+					I am fluent in Javascript, PHP and SQL, working with technologies and frameworks such as: React, Next.js, Redux, Laravel, PostgreSQL, MySQL, Docker, and Git. I am dedicated to continue my growth and skills as an engineer and am enthusiastic about the constant change made to software development.
 				</Typography>
 			</Grid>
 		</Grid>
