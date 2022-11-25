@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Grid, Typography, Box, List, ListItem, Card } from "@mui/material";
+import { Grid, Typography, List, ListItem, Card } from "@mui/material";
 import Image from 'next/image';
 import MissouriStateLogo from '../../public/MissouriStateLogo.png';
 
