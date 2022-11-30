@@ -1,26 +1,26 @@
 {
-    "data": [
-        {
-            "company": "Midwestern Interactive",
-            "position": "Software Engineer",
-            "dates": "November 2021 - Present",
-            "content": [
-                "Midwestern Interactive is a company dedicated to providing embedded teams for strategic planning, design, development, and implementation of software, apps, branding, and content processes.",
-                "MWI is more than just an agency, we believe in our company mission to serve each other, and serve our clients. Not only do our clients gain the knowledge and experiences of their embedded team members, but they gain the knowledge and experience of everybody involved in our mission.",
-                "Some of the technologies and frameworks I've used at MWI include React, Redux, Laravel, MySQL, PostgreSQL, and Docker."
-            ],
-            "logo": "/MWILogo.svg"
-        },
-        {
-            "company": "Missouri State University",
-            "position": "Student Web Developer",
-            "dates": "January 2021 - November 2021",
-            "content": [
-                "The Web Strategy and Development department at Missouri State University leads the design, development, and maintenance process for web applications used by thousands of faculty, staff, and students at the university.",
-                "I lead the project to create a migration platform for transferring web component assets from one content management system to another.",
-                "I assisted in adding new features and enhancements to the Student Employment Administrative tool, which was used to process, view, and review clearance forms to allow them to work at the university."
-            ],
-            "logo": "/MissouriStateLogo.png"
-        }
-    ]
+  "data": [
+    {
+      "company": "Midwestern Interactive",
+      "position": "Software Engineer",
+      "dates": "November 2021 - Present",
+      "content": [
+        "Midwestern Interactive is a company dedicated to providing embedded teams for strategic planning, design, development, and implementation of software, apps, branding, and content processes.",
+        "MWI is more than just an agency, we believe in our company mission to serve each other, and serve our clients. Not only do our clients gain the knowledge and experiences of their embedded team members, but they gain the knowledge and experience of everybody involved in our mission.",
+        "Some of the technologies and frameworks I've used at MWI include React, Redux, Laravel, MySQL, PostgreSQL, and Docker."
+      ],
+      "logo": "/MWILogo.svg"
+    },
+    {
+      "company": "Missouri State University",
+      "position": "Student Web Developer",
+      "dates": "January 2021 - November 2021",
+      "content": [
+        "The Web Strategy and Development department at Missouri State University leads the design, development, and maintenance process for web applications used by thousands of faculty, staff, and students at the university.",
+        "I lead the project to create a migration platform for transferring web component assets from one content management system to another.",
+        "I assisted in adding new features and enhancements to the Student Employment Administrative tool, which was used to process, view, and review clearance forms to allow them to work at the university."
+      ],
+      "logo": "/MissouriStateLogo.png"
+    }
+  ]
 }
