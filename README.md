@@ -16,6 +16,8 @@ Switch to the repo's folder
 cd rileygrotenhuis.com
 ```
 
+### Next.js Client
+
 Install the dependencies using NPM
 
 ```bash
