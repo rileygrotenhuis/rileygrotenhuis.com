@@ -1,6 +1,6 @@
 # rileygrotenhuis.com
 
-My personal website
+My personal website.
 
 ## Getting Started
 
