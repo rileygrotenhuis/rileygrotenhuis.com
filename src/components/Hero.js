@@ -5,7 +5,7 @@ export default function Hero() {
             <h1 className="text-text-primary text-5xl md:text-6xl font-bold mt-4">Riley Grotenhuis.</h1>
             <h2 className="text-text-secondary text-5xl md:text-6xl font-bold mt-4">I build things for the web.</h2>
             <p className="text-text-secondary font-extralight w-5/6 md:w-2/4 mt-8">
-                I'm a software engineer at
+                I am a software engineer at
                 <a className="text-primary hover:underline" href="https://www.midwesterninteractive.com" target="__blank"> Midwestern Interactive </a>
                 working towards our mission of serving each other,
                 and serving our clients.
