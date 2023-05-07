@@ -22,7 +22,7 @@ export default function Experience() {
     {
       index: 1,
       title: 'Student Web Developer',
-      company: 'Missouri State University',
+      company: 'Missouri State',
       company_url: 'https://www.missouristate.edu/Web/default.htm',
       dates: 'January 2021 - November 2021',
       description: [
@@ -36,14 +36,14 @@ export default function Experience() {
   return (
     <div
       id="experience"
-      className="w-3/4 md:w-1/2 mx-auto mt-72 flex flex-col gap-12"
+      className="w-3/4 lg:w-1/2 mx-auto mt-72 flex flex-col gap-12"
     >
       <h3 className="text-text-primary text-3xl">
         <span className="text-primary text-xl">02. </span>
         Where I Have Worked
       </h3>
-      <div className="flex gap-4">
-        <div className="flex flex-col text-sm font-extralight">
+      <div className="flex flex-col md:flex-row gap-4">
+        <div className="flex flex-row md:flex-col text-sm font-extralight">
           {experience.map((item, index) => {
             return (
               <button
