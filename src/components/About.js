@@ -13,37 +13,53 @@ export default function About() {
         </h3>
         <div className="flex flex-col gap-4">
           <p className="text-text-secondary leading-6">
-            Hello! My name is Riley and I enjoy creating things that live on the
-            internet. My interest in web development started back in 2015 when I
-            decided to take my first computer science class in high school.
-            Since then I have fallen down the software engineer rabbit hole!
+            Hi! My name is Riley and I love all things web development. My
+            interest in programming started back in 2015 when I decided to take
+            my first computer science course in high school. Since then I have
+            done extensive self learning and spent some time at Missouri State
+            University studying computer science.
           </p>
           <p className="text-text-secondary leading-6">
-            Fast-forward to today, and I have had the privilege of working at a
-            public 4-year university (
-            <span className="text-primary">Missouri State University</span>)
-            which has lead me to where I am currently employed at
-            <span className="text-primary"> Midwestern Interactive</span>
+            I have had the privilege of working at
+            <a
+              className="text-primary hover:underline"
+              href="https://www.missouristate.edu"
+              target="__blank"
+            >
+              {' '}
+              Missouri State University{' '}
+            </a>
+            as a student web developer where I worked on a lot of their internal
+            tooling as well as various web applications. Fast forward to today,
+            I have put a halt on my formal education and my main focus today is
+            building full stack applications at
+            <a
+              className="text-primary hover:underline"
+              href="https://www.midwesterninteractive.com"
+              target="__blank"
+            >
+              {' '}
+              Midwestern Interactive{' '}
+            </a>
+            for our various amounts of clients.
           </p>
           <p className="text-text-secondary leading-6">
-            I also am in the process of building up some side projects for
-            consumer use, be on the lookout for updates regarding that!
+            I am also in the process of building some side projects for more
+            consumer use, so keep up with my
+            <a
+              className="text-primary hover:underline"
+              href="https://github.com/rileygrotenhuis"
+              target="__blank"
+            >
+              {' '}
+              GitHub{' '}
+            </a>
+            for updates regarding that!
           </p>
           <p className="text-text-secondary leading-6">
             Here are a few technologies I have been working with recently:
           </p>
           <div className="flex gap-32 text-text-secondary ml-4">
-            <ul className="list-disc text-primary">
-              <li>
-                <span className="text-text-secondary">Javascript</span>
-              </li>
-              <li>
-                <span className="text-text-secondary">Next.js</span>
-              </li>
-              <li>
-                <span className="text-text-secondary">TailwindCSS</span>
-              </li>
-            </ul>
             <ul className="list-disc text-primary">
               <li>
                 <span className="text-text-secondary">TypeScript</span>
@@ -52,7 +68,24 @@ export default function About() {
                 <span className="text-text-secondary">PHP</span>
               </li>
               <li>
+                <span className="text-text-secondary">Go</span>
+              </li>
+              <li>
+                <span className="text-text-secondary">Next.js</span>
+              </li>
+            </ul>
+            <ul className="list-disc text-primary">
+              <li>
+                <span className="text-text-secondary">Vue</span>
+              </li>
+              <li>
                 <span className="text-text-secondary">Laravel</span>
+              </li>
+              <li>
+                <span className="text-text-secondary">Go Fiber</span>
+              </li>
+              <li>
+                <span className="text-text-secondary">Tailwind</span>
               </li>
             </ul>
           </div>
