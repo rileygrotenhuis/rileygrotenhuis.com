@@ -1,7 +1,9 @@
+import Hero from "@/components/Hero";
+
 export default function Home() {
   return (
-    <>
-      <h1>Testing</h1>
-    </>
+    <div className="w-5/6 md:w-3/4 mx-auto">
+      <Hero />
+    </div>
   );
 }
