@@ -12,7 +12,7 @@ export default function Navbar() {
           RG
         </h1>
         <div
-          class={`absolute right-0 top-0 w-4/6 h-full bg-background-secondary ${
+          className={`absolute right-0 top-0 w-4/6 h-full bg-background-secondary ${
             !isMenuOpen ? 'hidden' : ''
           }`}
         >
@@ -38,7 +38,7 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <div class={`my-auto ${isMenuOpen ? 'hidden' : ''}`}>
+        <div className={`my-auto ${isMenuOpen ? 'hidden' : ''}`}>
           <button
             className="flex flex-col gap-2 items-center justify-center w-8 h-8 rounded-md"
             onClick={() => setIsMenuOpen(true)}
