@@ -23,13 +23,12 @@ export default function Experience() {
       index: 1,
       title: 'Student Web Developer',
       company: 'Missouri State University',
-      company_url: 'https://www.missouristate.edu',
+      company_url: 'https://www.missouristate.edu/Web/default.htm',
       dates: 'January 2021 - November 2021',
       description: [
-        'Developed and styled interactive web applications for Apple Music using Ember and SCSS',
-        'Built and shipped the Apple Music Extension for Facebook Messenger leveraging third-party and internal API integrations',
-        'Architected and implemented the user interface of Apple Music embeddable web player widget for in-browser user authorization and full song playback',
-        'Contributed extensively to the creation of MusicKit JS, a public-facing JavaScript SDK for embedding Apple Music players into web applications',
+        'Developed internal tooling and web applications for Missouri State using .NET technologies that were used by thousands of students, faculty, and staff within the university limits',
+        'Built and shipped an internal tool that migrated thousands of web component building blocks from one CMS to another, savings many hours of manual labor work from other student workers',
+        'Collaborated closely with the Student Employment department to design and develop version 2 of their student worker onboarding and screening softwares' 
       ],
     },
   ];

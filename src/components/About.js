@@ -23,7 +23,7 @@ export default function About() {
             I have had the privilege of working at
             <a
               className="text-primary hover:underline"
-              href="https://www.missouristate.edu"
+              href="https://www.missouristate.edu/Web/default.htm"
               target="__blank"
             >
               {' '}
