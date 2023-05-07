@@ -96,7 +96,7 @@ export default function About() {
           width={1500}
           height={1500}
           className="rounded-md"
-          src="/Profile.jpeg"
+          src="/images/profile.jpeg"
           alt="Profile_Image"
         />
       </div>
