@@ -47,10 +47,17 @@ export default function Navbar() {
                 Experience
               </li>
             </Link>
-            <li className="hover:text-primary hover:cursor-pointer my-auto flex flex-col">
-              <span className="text-primary">03. </span>
-              Contact
-            </li>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <li className="hover:text-primary hover:cursor-pointer my-auto flex flex-col">
+                <span className="text-primary">03. </span>
+                Contact
+              </li>
+            </Link>
           </ul>
         </div>
         <div className={`my-auto ${isMenuOpen ? 'hidden' : ''}`}>
@@ -81,10 +88,12 @@ export default function Navbar() {
               Experience
             </li>
           </Link>
-          <li className="hover:text-primary hover:cursor-pointer my-auto">
-            <span className="text-primary">03. </span>
-            Contact
-          </li>
+          <Link to="contact" smooth={true} duration={500}>
+            <li className="hover:text-primary hover:cursor-pointer my-auto">
+              <span className="text-primary">03. </span>
+              Contact
+            </li>
+          </Link>
         </ul>
       </div>
     </nav>
