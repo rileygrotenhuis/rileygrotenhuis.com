@@ -8,7 +8,7 @@ export default function About() {
     >
       <div className="my-auto flex flex-col gap-8">
         <h3 className="text-text-primary text-3xl">
-          <span className="text-primary">01. </span>
+          <span className="text-primary text-xl">01. </span>
           About Me
         </h3>
         <div className="flex flex-col gap-4">
