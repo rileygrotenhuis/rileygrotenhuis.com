@@ -9,14 +9,14 @@ export default function Experience() {
     {
       index: 0,
       title: 'Software Engineer',
-      company: 'Midwestern Interactive',
-      company_url: 'https://www.midwesterninteractive.com',
+      company: 'Midwestern',
+      company_url: 'https://www.buildmidwestern.com',
       dates: 'November 2021 - Present',
       description: [
-        'Developed and styled interactive web applications for Apple Music using Ember and SCSS',
-        'Built and shipped the Apple Music Extension for Facebook Messenger leveraging third-party and internal API integrations',
-        'Architected and implemented the user interface of Apple Music embeddable web player widget for in-browser user authorization and full song playback',
-        'Contributed extensively to the creation of MusicKit JS, a public-facing JavaScript SDK for embedding Apple Music players into web applications',
+        'Work alongside other engineers, designers, project managers and other creatives to provide an embedded teams solution for our clients',
+        'Build and ship full stack applications for our clients using technologies like Laravel, Vue, React and many others to help solve their business requirements',
+        'Assist other engineers with any technical knowledge or experience I have that may help guide them to better solve problems they are working on with their clients',
+        'Run weekly group sessions where we improve our technical and professional skills as a software engineer by working on group programming and other engineering exercises in a collaboriative effort',
       ],
     },
     {
@@ -28,7 +28,7 @@ export default function Experience() {
       description: [
         'Developed internal tooling and web applications for Missouri State using .NET technologies that were used by thousands of students, faculty, and staff within the university limits',
         'Built and shipped an internal tool that migrated thousands of web component building blocks from one CMS to another, savings many hours of manual labor work from other student workers',
-        'Collaborated closely with the Student Employment department to design and develop version 2 of their student worker onboarding and screening softwares' 
+        'Collaborated closely with the Student Employment department to design and develop version 2 of their student worker onboarding and screening softwares',
       ],
     },
   ];

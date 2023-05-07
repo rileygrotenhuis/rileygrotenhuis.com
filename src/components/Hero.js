@@ -12,7 +12,7 @@ export default function Hero() {
         I am a software engineer at
         <a
           className="text-primary hover:underline"
-          href="https://www.midwesterninteractive.com"
+          href="https://www.buildmidwestern.com"
           target="__blank"
         >
           {' '}

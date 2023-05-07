@@ -35,7 +35,7 @@ export default function About() {
             building full stack applications at
             <a
               className="text-primary hover:underline"
-              href="https://www.midwesterninteractive.com"
+              href="https://www.buildmidwestern.com"
               target="__blank"
             >
               {' '}
