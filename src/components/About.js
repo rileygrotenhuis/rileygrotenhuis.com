@@ -2,7 +2,10 @@ import Image from 'next/image';
 
 export default function About() {
   return (
-    <div className="w-3/4 md:w-7/12 mx-auto mt-72 flex flex-col md:flex-row gap-16">
+    <div
+      id="hero"
+      className="w-3/4 md:w-7/12 mx-auto mt-72 flex flex-col md:flex-row gap-16"
+    >
       <div className="my-auto flex flex-col gap-8">
         <h3 className="text-text-primary text-3xl">
           <span className="text-primary">01. </span>
@@ -61,6 +64,7 @@ export default function About() {
           height={1500}
           className="rounded-md"
           src="/Profile.jpeg"
+          alt="Profile_Image"
         />
       </div>
     </div>

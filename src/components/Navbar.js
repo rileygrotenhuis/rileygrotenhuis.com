@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { Link } from 'react-scroll';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,10 +25,17 @@ export default function Navbar() {
             <span className="w-8 h-0.5 bg-primary -mt-0.5 -rotate-45"></span>
           </button>
           <ul className="text-text-primary font-extralight flex flex-col gap-8 my-auto text-lg mt-32 text-center">
-            <li className="hover:text-primary hover:cursor-pointer my-auto flex flex-col">
-              <span className="text-primary">01.</span>
-              About
-            </li>
+            <Link
+              to="hero"
+              smooth={true}
+              duration={500}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <li className="hover:text-primary hover:cursor-pointer my-auto flex flex-col">
+                <span className="text-primary">01.</span>
+                About
+              </li>
+            </Link>
             <li className="hover:text-primary hover:cursor-pointer my-auto flex flex-col">
               <span className="text-primary">02. </span>
               Experience
@@ -54,10 +62,12 @@ export default function Navbar() {
           RG
         </h1>
         <ul className="text-text-primary font-extralight flex gap-16 my-auto text-sm">
-          <li className="hover:text-primary hover:cursor-pointer my-auto">
-            <span className="text-primary">01. </span>
-            About
-          </li>
+          <Link to="hero" smooth={true} duration={500}>
+            <li className="hover:text-primary hover:cursor-pointer my-auto">
+              <span className="text-primary">01. </span>
+              About
+            </li>
+          </Link>
           <li className="hover:text-primary hover:cursor-pointer my-auto">
             <span className="text-primary">02. </span>
             Experience
