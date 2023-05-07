@@ -11,8 +11,8 @@ export default function Hero() {
                 and serving our clients.
             </p>
             <a href="https://github.com/rileygrotenhuis" target="__blank">
-                <button className="border border-primary px-8 py-2 text-primary font-light rounded-md mt-8">
-                    Check out my GitHub
+                <button className="border border-primary px-8 py-4 text-primary font-extralight rounded-md mt-8">
+                    Check out my GitHub!
                 </button>
             </a>
         </div>
