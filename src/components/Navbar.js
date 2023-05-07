@@ -26,7 +26,7 @@ export default function Navbar() {
           </button>
           <ul className="text-text-primary font-extralight flex flex-col gap-8 my-auto text-lg mt-32 text-center">
             <Link
-              to="hero"
+              to="about"
               smooth={true}
               duration={500}
               onClick={() => setIsMenuOpen(false)}
@@ -36,10 +36,17 @@ export default function Navbar() {
                 About
               </li>
             </Link>
-            <li className="hover:text-primary hover:cursor-pointer my-auto flex flex-col">
-              <span className="text-primary">02. </span>
-              Experience
-            </li>
+            <Link
+              to="experience"
+              smooth={true}
+              duration={500}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <li className="hover:text-primary hover:cursor-pointer my-auto flex flex-col">
+                <span className="text-primary">02. </span>
+                Experience
+              </li>
+            </Link>
             <li className="hover:text-primary hover:cursor-pointer my-auto flex flex-col">
               <span className="text-primary">03. </span>
               Contact
@@ -62,16 +69,18 @@ export default function Navbar() {
           RG
         </h1>
         <ul className="text-text-primary font-extralight flex gap-16 my-auto text-sm">
-          <Link to="hero" smooth={true} duration={500}>
+          <Link to="about" smooth={true} duration={500}>
             <li className="hover:text-primary hover:cursor-pointer my-auto">
               <span className="text-primary">01. </span>
               About
             </li>
           </Link>
-          <li className="hover:text-primary hover:cursor-pointer my-auto">
-            <span className="text-primary">02. </span>
-            Experience
-          </li>
+          <Link to="experience" smooth={true} duration={500}>
+            <li className="hover:text-primary hover:cursor-pointer my-auto">
+              <span className="text-primary">02. </span>
+              Experience
+            </li>
+          </Link>
           <li className="hover:text-primary hover:cursor-pointer my-auto">
             <span className="text-primary">03. </span>
             Contact

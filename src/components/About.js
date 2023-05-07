@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function About() {
   return (
     <div
-      id="hero"
+      id="about"
       className="w-3/4 md:w-7/12 mx-auto mt-72 flex flex-col md:flex-row gap-16"
     >
       <div className="my-auto flex flex-col gap-8">

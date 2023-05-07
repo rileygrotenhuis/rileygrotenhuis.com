@@ -35,16 +35,20 @@ export default function Experience() {
   ];
 
   return (
-    <div className="w-3/4 md:w-1/2 mx-auto mt-72 flex flex-col gap-12">
+    <div
+      id="experience"
+      className="w-3/4 md:w-1/2 mx-auto mt-72 flex flex-col gap-12"
+    >
       <h3 className="text-text-primary text-3xl">
         <span className="text-primary text-xl">02. </span>
         Where I Have Worked
       </h3>
       <div className="flex gap-4">
         <div className="flex flex-col text-sm font-extralight">
-          {experience.map((item) => {
+          {experience.map((item, index) => {
             return (
               <button
+                key={index}
                 className={`cursor-pointer w-48 h-10 ${
                   item.index === experienceIndex
                     ? 'text-primary'
@@ -75,9 +79,9 @@ export default function Experience() {
             {experience[experienceIndex].dates}
           </p>
           <ul className="flex flex-col gap-2 list-disc text-primary ml-4 mt-4">
-            {experience[experienceIndex].description.map((item) => {
+            {experience[experienceIndex].description.map((item, index) => {
               return (
-                <li>
+                <li key={index}>
                   <span className="text-text-secondary">{item}</span>
                 </li>
               );
