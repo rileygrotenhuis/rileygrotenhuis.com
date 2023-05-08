@@ -22,8 +22,8 @@ const getPostMetaData = () => {
   return posts;
 };
 
-export default async function Blog() {
-  const posts = await getPostMetaData();
+export default function Blog() {
+  const posts = getPostMetaData();
 
   return (
     <>

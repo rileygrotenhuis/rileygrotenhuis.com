@@ -23,10 +23,10 @@ const getPostMetaData = (slug) => {
   };
 };
 
-export default async function BlogPost(props) {
+export default function BlogPost(props) {
   const slug = props.params.slug;
-  const post = await getPostContent(slug);
-  const meta = await getPostMetaData(slug);
+  const post = getPostContent(slug);
+  const meta = getPostMetaData(slug);
 
   return (
     <>
