@@ -10,22 +10,15 @@ const getPostContent = (slug) => {
 };
 
 const getPostMetaData = (slug) => {
-  // const folder = './posts/';
-  // const content = fs.readFileSync(`${folder}${slug}.md`, 'utf8');
+  const folder = './posts/';
+  const content = fs.readFileSync(`${folder}${slug}.md`, 'utf8');
 
-  // const metaData = matter(content);
-
-  // return {
-  //   title: metaData.data.title,
-  //   date: metaData.data.date,
-  //   subtitle: metaData.data.subtitle,
-  //   slug: slug.replace('.md', ''),
-  // };
+  const metaData = matter(content);
 
   return {
-    title: 'Testing',
-    date: 'testing',
-    subtitle: 'testing',
+    title: metaData.data.title,
+    date: metaData.data.date,
+    subtitle: metaData.data.subtitle,
     slug: slug.replace('.md', ''),
   };
 };
