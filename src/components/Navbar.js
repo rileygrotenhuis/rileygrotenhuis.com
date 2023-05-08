@@ -5,6 +5,28 @@ import { Link } from 'react-scroll';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [currentSection, setCurrentSection] = useState(-1);
+
+  const sections = [
+    {
+      index: 0,
+      sectionNumber: '01.',
+      title: 'About',
+      selector: 'about',
+    },
+    {
+      index: 1,
+      sectionNumber: '02.',
+      title: 'Experience',
+      selector: 'experience',
+    },
+    {
+      index: 2,
+      sectionNumber: '03.',
+      title: 'Contact',
+      selector: 'contact',
+    },
+  ];
 
   return (
     <nav>
@@ -25,39 +47,28 @@ export default function Navbar() {
             <span className="w-8 h-0.5 bg-primary -mt-0.5 -rotate-45"></span>
           </button>
           <ul className="text-text-primary font-extralight flex flex-col gap-8 my-auto text-lg mt-32 text-center">
-            <Link
-              to="about"
-              smooth={true}
-              duration={500}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              <li className="hover:text-primary hover:cursor-pointer my-auto flex flex-col">
-                <span className="text-primary">01.</span>
-                About
-              </li>
-            </Link>
-            <Link
-              to="experience"
-              smooth={true}
-              duration={500}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              <li className="hover:text-primary hover:cursor-pointer my-auto flex flex-col">
-                <span className="text-primary">02. </span>
-                Experience
-              </li>
-            </Link>
-            <Link
-              to="contact"
-              smooth={true}
-              duration={500}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              <li className="hover:text-primary hover:cursor-pointer my-auto flex flex-col">
-                <span className="text-primary">03. </span>
-                Contact
-              </li>
-            </Link>
+            {sections.map((item) => {
+              return (
+                <Link
+                  to={item.selector}
+                  smooth={true}
+                  duration={500}
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    setCurrentSection(item.index);
+                  }}
+                >
+                  <li
+                    className={`${
+                      item.index === currentSection ? 'text-primary' : ''
+                    } hover:text-primary hover:cursor-pointer my-auto flex flex-col`}
+                  >
+                    <span className="text-primary">{item.sectionNumber} </span>
+                    {item.title}
+                  </li>
+                </Link>
+              );
+            })}
           </ul>
         </div>
         <div className={`my-auto ${isMenuOpen ? 'hidden' : ''}`}>
@@ -76,24 +87,27 @@ export default function Navbar() {
           RG
         </h1>
         <ul className="text-text-primary font-extralight flex gap-16 my-auto text-sm">
-          <Link to="about" smooth={true} duration={500}>
-            <li className="hover:text-primary hover:cursor-pointer my-auto">
-              <span className="text-primary">01. </span>
-              About
-            </li>
-          </Link>
-          <Link to="experience" smooth={true} duration={500}>
-            <li className="hover:text-primary hover:cursor-pointer my-auto">
-              <span className="text-primary">02. </span>
-              Experience
-            </li>
-          </Link>
-          <Link to="contact" smooth={true} duration={500}>
-            <li className="hover:text-primary hover:cursor-pointer my-auto">
-              <span className="text-primary">03. </span>
-              Contact
-            </li>
-          </Link>
+          {sections.map((item) => {
+            return (
+              <Link
+                to={item.selector}
+                smooth={true}
+                duration={500}
+                onClick={() => {
+                  setCurrentSection(item.index);
+                }}
+              >
+                <li
+                  className={`${
+                    item.index === currentSection ? 'text-primary' : ''
+                  } hover:text-primary hover:cursor-pointer my-auto`}
+                >
+                  <span className="text-primary">{item.sectionNumber} </span>
+                  {item.title}
+                </li>
+              </Link>
+            );
+          })}
         </ul>
       </div>
     </nav>
