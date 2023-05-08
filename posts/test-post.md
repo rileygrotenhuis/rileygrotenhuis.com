@@ -1,6 +1,6 @@
 ---
-title: 'My Developer Journey'
-date: 'Monday, May 8, 2023'
+title: 'Test Post'
+date: 'Sunday, May 7, 2023'
 ---
 
 ### Simple Beginnings
