@@ -25,8 +25,8 @@ const getPostMetaData = (slug) => {
 
 export default function BlogPost(props) {
   const slug = props.params.slug;
-  const post = getPostContent(slug);
   const meta = getPostMetaData(slug);
+  const post = getPostContent(slug);
 
   return (
     <>
