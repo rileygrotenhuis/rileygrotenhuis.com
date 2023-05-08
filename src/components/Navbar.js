@@ -47,9 +47,10 @@ export default function Navbar() {
             <span className="w-8 h-0.5 bg-primary -mt-0.5 -rotate-45"></span>
           </button>
           <ul className="text-text-primary font-extralight flex flex-col gap-8 my-auto text-lg mt-32 text-center">
-            {sections.map((item) => {
+            {sections.map((item, index) => {
               return (
                 <Link
+                  key={index}
                   to={item.selector}
                   smooth={true}
                   duration={500}
@@ -87,9 +88,10 @@ export default function Navbar() {
           RG
         </h1>
         <ul className="text-text-primary font-extralight flex gap-16 my-auto text-sm">
-          {sections.map((item) => {
+          {sections.map((item, index) => {
             return (
               <Link
+                key={index}
                 to={item.selector}
                 smooth={true}
                 duration={500}
