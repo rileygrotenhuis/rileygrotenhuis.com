@@ -1,5 +1,4 @@
 import './globals.css';
-import Navbar from '@/components/Navbar';
 
 export const metadata = {
   title: 'Riley Grotenhuis',
@@ -9,10 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-background mb-32">
-        <Navbar />
-        {children}
-      </body>
+      <body className="bg-background mb-32">{children}</body>
     </html>
   );
 }

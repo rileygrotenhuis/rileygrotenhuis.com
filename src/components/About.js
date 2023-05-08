@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function About() {
   return (
@@ -21,40 +22,40 @@ export default function About() {
           </p>
           <p className="text-text-secondary leading-6">
             I have had the privilege of working at
-            <a
+            <Link
               className="text-primary hover:underline"
               href="https://www.missouristate.edu/Web/default.htm"
               target="__blank"
             >
               {' '}
               Missouri State University{' '}
-            </a>
+            </Link>
             as a student web developer where I worked on a lot of their internal
             tooling as well as various web applications. Fast forward to today,
             I have put a halt on my formal education and my main focus today is
             building full stack applications at
-            <a
+            <Link
               className="text-primary hover:underline"
               href="https://www.buildmidwestern.com"
               target="__blank"
             >
               {' '}
               Midwestern Interactive{' '}
-            </a>
+            </Link>
             for our various amounts of clients.
           </p>
           <p className="text-text-secondary leading-6">
-            I am also in the process of building some side projects for more
-            consumer use, so keep up with my
-            <a
+            You can learn a little bit more about me and my journey as a
+            developer here in this
+            <Link
               className="text-primary hover:underline"
-              href="https://github.com/rileygrotenhuis"
+              href="/blog/my-developer-journey"
               target="__blank"
             >
               {' '}
-              GitHub{' '}
-            </a>
-            for updates regarding that!
+              blog post{' '}
+            </Link>
+            !
           </p>
           <p className="text-text-secondary leading-6">
             Here are a few technologies I have been working with recently:

@@ -1,7 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
+import Link from 'next/link';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,7 +50,7 @@ export default function Navbar() {
           <ul className="text-text-primary font-extralight flex flex-col gap-8 my-auto text-lg mt-32 text-center">
             {sections.map((item, index) => {
               return (
-                <Link
+                <ScrollLink
                   key={index}
                   to={item.selector}
                   smooth={true}
@@ -67,9 +68,14 @@ export default function Navbar() {
                     <span className="text-primary">{item.sectionNumber} </span>
                     {item.title}
                   </li>
-                </Link>
+                </ScrollLink>
               );
             })}
+            <Link href="/blog/my-developer-journey">
+              <li className="text-primary border border-primary font-extralight my-auto py-2 px-4 rounded-md w-32 mx-auto">
+                My Blog!
+              </li>
+            </Link>
           </ul>
         </div>
         <div className={`my-auto ${isMenuOpen ? 'hidden' : ''}`}>
@@ -90,7 +96,7 @@ export default function Navbar() {
         <ul className="text-text-primary font-extralight flex gap-16 my-auto text-sm">
           {sections.map((item, index) => {
             return (
-              <Link
+              <ScrollLink
                 key={index}
                 to={item.selector}
                 smooth={true}
@@ -98,18 +104,24 @@ export default function Navbar() {
                 onClick={() => {
                   setCurrentSection(item.index);
                 }}
+                className="my-auto"
               >
                 <li
                   className={`${
                     item.index === currentSection ? 'text-primary' : ''
-                  } hover:text-primary hover:cursor-pointer my-auto`}
+                  } hover:text-primary hover:cursor-pointer`}
                 >
                   <span className="text-primary">{item.sectionNumber} </span>
                   {item.title}
                 </li>
-              </Link>
+              </ScrollLink>
             );
           })}
+          <Link href="/blog/my-developer-journey">
+            <li className="text-primary border border-primary font-extralight my-auto py-2 px-4 rounded-md">
+              My Blog!
+            </li>
+          </Link>
         </ul>
       </div>
     </nav>

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Hero() {
   return (
     <div className="w-5/6 md:w-4/6 mx-auto mt-8 md:mt-24">
@@ -10,22 +12,22 @@ export default function Hero() {
       </h2>
       <p className="text-text-secondary font-extralight w-5/6 md:w-2/4 mt-8">
         I am a software engineer at
-        <a
+        <Link
           className="text-primary hover:underline"
           href="https://www.buildmidwestern.com"
           target="__blank"
         >
           {' '}
           Midwestern Interactive{' '}
-        </a>
+        </Link>
         working towards our mission of serving each other, and serving our
         clients.
       </p>
-      <a href="https://github.com/rileygrotenhuis" target="__blank">
+      <Link href="https://github.com/rileygrotenhuis" target="__blank">
         <button className="border border-primary px-8 py-4 text-primary font-extralight rounded-md mt-8">
           Check out my GitHub!
         </button>
-      </a>
+      </Link>
     </div>
   );
 }

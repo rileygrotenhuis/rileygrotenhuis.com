@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Contact() {
   return (
     <div
@@ -13,11 +15,11 @@ export default function Contact() {
         is always open. Whether you have a question or just want to say hi, I
         will try my best to get back to you!
       </p>
-      <a href="mailto: rg@buildmidwestern.com">
+      <Link href="mailto: rg@buildmidwestern.com">
         <button className="py-4 px-8 mt-8 rounded-md border border-primary text-lg font-extralight text-primary">
           Say Hello
         </button>
-      </a>
+      </Link>
     </div>
   );
 }

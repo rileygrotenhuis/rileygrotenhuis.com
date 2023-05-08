@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useState } from 'react';
 
 export default function Experience() {
@@ -65,14 +66,14 @@ export default function Experience() {
         <div>
           <h3 className="text-text-primary text-lg">
             {experience[experienceIndex].title}
-            <a
+            <Link
               href={experience[experienceIndex].company_url}
               target="__blank"
               className="text-primary"
             >
               {' '}
               @ {experience[experienceIndex].company}
-            </a>
+            </Link>
           </h3>
           <p className="text-text-secondary mt-2 text-sm font-extralight">
             {experience[experienceIndex].dates}
