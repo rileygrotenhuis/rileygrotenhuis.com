@@ -1,4 +1,7 @@
-# My Developer Journey
+---
+title: 'My Developer Journey'
+date: 'Monday, May 8, 2023'
+---
 
 ### Simple Beginnings
 
