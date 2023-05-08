@@ -1,6 +1,6 @@
 import fs from 'fs';
 import matter from 'gray-matter';
-import BlogNavbar from '@/components/BlogNavbar';
+import SecondaryNavbar from '@/components/SecondaryNavbar';
 import BlogContent from '@/components/BlogContent';
 
 const getPostContent = (slug) => {
@@ -28,7 +28,7 @@ export default function BlogPost(props) {
 
   return (
     <>
-      <BlogNavbar />
+      <SecondaryNavbar />
       <BlogContent post={post} meta={meta} />
     </>
   );

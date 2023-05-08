@@ -71,7 +71,7 @@ export default function Navbar() {
                 </ScrollLink>
               );
             })}
-            <Link href="/blog/my-developer-journey">
+            <Link href="/blog">
               <li className="text-primary border border-primary font-extralight my-auto py-2 px-4 rounded-md w-32 mx-auto">
                 My Blog!
               </li>
@@ -117,7 +117,7 @@ export default function Navbar() {
               </ScrollLink>
             );
           })}
-          <Link href="/blog/my-developer-journey">
+          <Link href="/blog">
             <li className="text-primary border border-primary font-extralight my-auto py-2 px-4 rounded-md">
               My Blog!
             </li>
