@@ -1,4 +1,4 @@
-import SecondaryNavbar from '@/components/SecondaryNavbar';
+import SecondaryNavbar from '@/components/navigation/SecondaryNavbar';
 
 export default function Blog() {
   return (

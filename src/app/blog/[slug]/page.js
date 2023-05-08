@@ -1,7 +1,7 @@
 import fs from 'fs';
 import matter from 'gray-matter';
-import SecondaryNavbar from '@/components/SecondaryNavbar';
-import BlogContent from '@/components/BlogContent';
+import SecondaryNavbar from '@/components/navigation/SecondaryNavbar';
+import BlogContent from '@/components/blog/BlogContent';
 
 const getPostContent = (slug) => {
   const content = fs.readFileSync(`posts/${slug}.md`, 'utf8');
