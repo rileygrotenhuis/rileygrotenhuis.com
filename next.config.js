@@ -1,7 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    nftTracing: true,
+    webpack: (config, { isServer }) => {
+      if (isServer) {
+        config.resolve.modules.push(__dirname + '/posts')
+      }
+      return config
+    },
   },
 };
 
