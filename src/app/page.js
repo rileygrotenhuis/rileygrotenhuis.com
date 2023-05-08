@@ -1,8 +1,8 @@
 import Navbar from '@/components/navigation/Navbar';
-import Hero from '@/components/Home/Hero';
-import About from '@/components/Home/About';
-import Experience from '@/components/Home/Experience';
-import Contact from '@/components/Home/Contact';
+import Hero from '@/components/home/Hero';
+import About from '@/components/home/About';
+import Experience from '@/components/home/Experience';
+import Contact from '@/components/home/Contact';
 
 export default function Home() {
   return (
