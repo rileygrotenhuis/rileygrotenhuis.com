@@ -1,5 +1,6 @@
 ---
 title: 'My Developer Journey'
+subtitle: 'An in-depth look about myself and how I get to where I am today'
 date: 'Monday, May 8, 2023'
 ---
 
