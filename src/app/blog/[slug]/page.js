@@ -3,24 +3,19 @@ import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
 
 const getPostContent = (slug) => {
-  const folder = 'posts/';
-  const file = `${folder}${slug}.md`;
-  const content = fs.readFileSync(file, 'utf8');
-  const matterResult = matter(content);
-  return matterResult;
+  const content = fs.readFileSync(`posts/${slug}.md`, 'utf8');
+  return matter(content);
 };
 
-const getPostMeta = (slug) => {
-  const folder = 'posts/';
-  const file = `${folder}${slug}.md`;
-  const content = fs.readFileSync(file, 'utf8');
+const getPostMetaData = (slug) => {
+  const content = fs.readFileSync(`posts/${slug}.md`, 'utf8');
 
-  const matterResult = matter(content);
+  const metaData = matter(content);
 
   return {
-    title: matterResult.data.title,
-    date: matterResult.data.date,
-    subtitle: matterResult.data.subtitle,
+    title: metaData.data.title,
+    date: metaData.data.date,
+    subtitle: metaData.data.subtitle,
     slug: slug.replace('.md', ''),
   };
 };
@@ -28,7 +23,7 @@ const getPostMeta = (slug) => {
 export default function BlogPost(props) {
   const slug = props.params.slug;
   const post = getPostContent(slug);
-  const meta = getPostMeta(slug);
+  const meta = getPostMetaData(slug);
 
   return (
     <div className="w-5/6 md:w-1/2 mx-auto mt-84 md:mt-12">
