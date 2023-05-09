@@ -5,40 +5,26 @@ import BlogContent from '@/components/blog/BlogContent';
 
 const getPostContent = (slug) => {
   const folder = 'public/posts/';
-  const files = fs.readdirSync(folder);
-  const markdownPosts = files.filter((file) => file.startsWith(slug) && file.endsWith('.md'));
-
-  const posts = markdownPosts.map((fileName) => {
-    const fileContents = fs.readFileSync(`public/posts/${fileName}`, 'utf8');
-    return matter(fileContents);
-  })
-
-  return posts[0];
+  const content = fs.readFileSync(`${folder}${slug}.md`, 'utf8');
+  return matter(content);
 };
 
 const getPostMetaData = (slug) => {
   const folder = 'public/posts/';
-  const files = fs.readdirSync(folder);
-  const markdownPosts = files.filter((file) => file.startsWith(slug) && file.endsWith('.md'));
-
-  const posts = markdownPosts.map((fileName) => {
-    const fileContents = fs.readFileSync(`public/posts/${fileName}`, 'utf8');
-    const matterResult = matter(fileContents);
-    return {
-      title: matterResult.data.title,
-      date: matterResult.data.date,
-      subtitle: matterResult.data.subtitle,
-      slug: fileName.replace('.md', ''),
-    };
-  });
-
-  return posts[0];
+  const content = fs.readFileSync(`${folder}${slug}.md`, 'utf8');
+  const metaData = matter(content);
+  return {
+    title: metaData.data.title,
+    date: metaData.data.date,
+    subtitle: metaData.data.subtitle,
+    slug: slug.replace('.md', ''),
+  };
 };
 
 export default function BlogPost(props) {
   const slug = props.params.slug;
-  const meta = getPostMetaData(slug);
   const post = getPostContent(slug);
+  const meta = getPostMetaData(slug);
 
   return (
     <>
