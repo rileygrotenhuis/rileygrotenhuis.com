@@ -1,29 +1,15 @@
-import fs from 'fs';
-import matter from 'gray-matter';
 import SecondaryNavbar from '@/components/navigation/SecondaryNavbar';
 import BlogTable from '@/components/blog/BlogTable';
+import prisma from '@/config/prisma';
 
-const getPostMetaData = () => {
-  const folder = 'public/posts/';
-  const files = fs.readdirSync(folder);
-  const markdownPosts = files.filter((file) => file.endsWith('.md'));
-
-  const posts = markdownPosts.map((fileName) => {
-    const fileContents = fs.readFileSync(`public/posts/${fileName}`, 'utf8');
-    const matterResult = matter(fileContents);
-    return {
-      title: matterResult.data.title,
-      date: matterResult.data.date,
-      subtitle: matterResult.data.subtitle,
-      slug: fileName.replace('.md', ''),
-    };
-  });
+const getPostData = async () => {
+  const posts = await prisma.post.findMany();
 
   return posts;
 };
 
-export default function Blog() {
-  const posts = getPostMetaData();
+export default async function Blog() {
+  const posts = await getPostData();
 
   return (
     <>

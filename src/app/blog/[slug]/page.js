@@ -1,37 +1,26 @@
-import fs from 'fs';
-import matter from 'gray-matter';
 import SecondaryNavbar from '@/components/navigation/SecondaryNavbar';
 import BlogContent from '@/components/blog/BlogContent';
+import prisma from '@/config/prisma';
 
-const getPostContent = (slug) => {
-  const folder = 'public/posts/';
-  const file = `${folder}${slug}.md`;
-  const content = fs.readFileSync(file, 'utf8');
-  return matter(content);
+const getPostData = async (slug) => {
+  const post = await prisma.post.findFirst({
+    where: {
+      slug: {
+        equals: slug,
+      },
+    },
+  });
+
+  return post;
 };
 
-const getPostMetaData = (slug) => {
-  const folder = 'public/posts/';
-  const file = `${folder}${slug}.md`;
-  const content = fs.readFileSync(file, 'utf8');
-  const metaData = matter(content);
-  return {
-    title: metaData.data.title,
-    date: metaData.data.date,
-    subtitle: metaData.data.subtitle,
-    slug: slug.replace('.md', ''),
-  };
-};
-
-export default function BlogPost(props) {
-  const slug = props.params.slug;
-  const post = getPostContent(slug);
-  const meta = getPostMetaData(slug);
+export default async function BlogPost(props) {
+  const post = await getPostData(props.params.slug);
 
   return (
     <>
       <SecondaryNavbar />
-      <BlogContent post={post} meta={meta} />
+      <BlogContent post={post} />
     </>
   );
 }

@@ -16,7 +16,7 @@ export default function BlogTable(props) {
               <h3 className="text-text-primary hover:text-primary hover:cursor-pointer text-2xl font-normal">
                 {item.title}
               </h3>
-              <p className="text-lg text-primary">{item.date}</p>
+              <p className="text-lg text-primary">{item.published}</p>
               <p>{item.subtitle}</p>
             </Link>
           );
