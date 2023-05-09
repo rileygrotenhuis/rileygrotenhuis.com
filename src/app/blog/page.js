@@ -3,7 +3,7 @@ import matter from 'gray-matter';
 import SecondaryNavbar from '@/components/navigation/SecondaryNavbar';
 import BlogTable from '@/components/blog/BlogTable';
 
-const getPostMetaData = () => {
+const getPostMetaData = async () => {
   const folder = 'public/posts/';
   const files = fs.readdirSync(folder);
   const markdownPosts = files.filter((file) => file.endsWith('.md'));
@@ -22,8 +22,8 @@ const getPostMetaData = () => {
   return posts;
 };
 
-export default function Blog() {
-  const posts = getPostMetaData();
+export default async function Blog() {
+  const posts = await getPostMetaData();
 
   return (
     <>
