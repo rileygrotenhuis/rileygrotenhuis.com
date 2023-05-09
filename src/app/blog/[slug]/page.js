@@ -4,14 +4,14 @@ import SecondaryNavbar from '@/components/navigation/SecondaryNavbar';
 import BlogContent from '@/components/blog/BlogContent';
 
 const getPostContent = (slug) => {
-  const folder = 'public/posts/';
+  const folder = 'posts/';
   const file = `${folder}${slug}.md`;
   const content = fs.readFileSync(file, 'utf8');
   return matter(content);
 };
 
 const getPostMetaData = (slug) => {
-  const folder = 'public/posts/';
+  const folder = 'posts/';
   const file = `${folder}${slug}.md`;
   const content = fs.readFileSync(file, 'utf8');
   const metaData = matter(content);
