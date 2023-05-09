@@ -20,7 +20,6 @@ My personal website.
 3. Copy the `.env.example` file as `.env.local` and `.env` then update the given variables
 
    ```bash
-   cp .env.example .env.local
    cp .env.example .env
    ```
 
