@@ -6,11 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "prisma:migrate": "prisma migrate dev",
     "lint": "next lint",
     "lint:prettier": "prettier --check .",
     "lint:fix": "prettier --write --list-different ."
   },
   "dependencies": {
+    "@prisma/client": "^4.11.0",
     "autoprefixer": "10.4.14",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.1",
@@ -25,6 +27,7 @@
   },
   "devDependencies": {
     "eslint-config-prettier": "^8.5.0",
-    "prettier": "^2.8.1"
+    "prettier": "^2.8.1",
+    "prisma": "^4.11.0"
   }
 }
