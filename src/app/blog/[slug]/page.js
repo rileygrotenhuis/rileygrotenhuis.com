@@ -3,13 +3,13 @@ import matter from 'gray-matter';
 import SecondaryNavbar from '@/components/navigation/SecondaryNavbar';
 import BlogContent from '@/components/blog/BlogContent';
 
-const getPostContent = async (slug) => {
+const getPostContent = (slug) => {
   const folder = 'public/posts/';
   const content = fs.readFileSync(`${folder}${slug}.md`, 'utf8');
   return matter(content);
 };
 
-const getPostMetaData = async (slug) => {
+const getPostMetaData = (slug) => {
   const folder = 'public/posts/';
   const content = fs.readFileSync(`${folder}${slug}.md`, 'utf8');
 
@@ -23,10 +23,10 @@ const getPostMetaData = async (slug) => {
   };
 };
 
-export default async function BlogPost(props) {
+export default function BlogPost(props) {
   const slug = props.params.slug;
-  const meta = await getPostMetaData(slug);
-  const post = await getPostContent(slug);
+  const meta = getPostMetaData(slug);
+  const post = getPostContent(slug);
 
   return (
     <>
