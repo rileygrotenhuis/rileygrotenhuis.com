@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="w-3/4 lg:w-[550px] text-center mx-auto mt-72 font-extralight"
+      className="w-3/4 lg:w-[550px] text-center mx-auto mt-72 xl:mt-96 font-extralight"
     >
       <p className="text-primary text-lg">03. What Next?</p>
       <h3 className="text-5xl text-text-primary mt-4 font-bold">

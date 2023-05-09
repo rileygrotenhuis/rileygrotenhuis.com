@@ -37,7 +37,7 @@ export default function Experience() {
   return (
     <div
       id="experience"
-      className="w-3/4 lg:w-1/2 mx-auto mt-72 flex flex-col gap-12"
+      className="w-3/4 lg:w-1/2 mx-auto mt-72 xl:mt-96 flex flex-col gap-12 max-w-[1000px]"
     >
       <h3 className="text-text-primary text-3xl">
         <span className="text-primary text-xl">02. </span>
