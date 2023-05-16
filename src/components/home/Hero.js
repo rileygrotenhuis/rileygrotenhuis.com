@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <div className="w-5/6 md:w-4/6 mx-auto mt-8 md:mt-24 max-w-[1300px]">
+    <div className="w-5/6 md:w-4/6 mx-auto mt-8 md:mt-24 max-w-[1100px]">
       <span className="text-primary">Hi, my name is</span>
       <h1 className="text-text-primary text-5xl md:text-6xl font-bold mt-4">
         Riley Grotenhuis.
