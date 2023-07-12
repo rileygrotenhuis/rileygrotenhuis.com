@@ -13,7 +13,7 @@ export default function BlogTable(props) {
               className="bg-background-secondary hover:shadow-xl transform hover:-translate-y-1 duration-300 hover:cursor-pointer text-text-secondary font-extralight px-4 py-8 rounded-lg w-72 flex flex-col gap-4 mx-auto"
             >
               <Image
-                src="/images/Blog.svg"
+                src="/images/BlogLogo.svg"
                 width={48}
                 height={48}
                 alt="BlogPost"

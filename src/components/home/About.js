@@ -53,7 +53,7 @@ export default function About() {
               target="__blank"
             >
               {' '}
-              blog post
+              blog post{' '}
             </Link>
             !
           </p>
@@ -63,30 +63,30 @@ export default function About() {
           <div className="flex gap-32 text-text-secondary ml-4">
             <ul className="list-disc text-primary">
               <li>
+                <span className="text-text-secondary">TypeScript</span>
+              </li>
+              <li>
                 <span className="text-text-secondary">PHP</span>
+              </li>
+              <li>
+                <span className="text-text-secondary">Go</span>
+              </li>
+              <li>
+                <span className="text-text-secondary">Next.js</span>
+              </li>
+            </ul>
+            <ul className="list-disc text-primary">
+              <li>
+                <span className="text-text-secondary">Vue</span>
               </li>
               <li>
                 <span className="text-text-secondary">Laravel</span>
               </li>
               <li>
-                <span className="text-text-secondary">React</span>
+                <span className="text-text-secondary">Go Fiber</span>
               </li>
               <li>
-                <span className="text-text-secondary">TailwindCSS</span>
-              </li>
-            </ul>
-            <ul className="list-disc text-primary">
-              <li>
-                <span className="text-text-secondary">Javascript</span>
-              </li>
-              <li>
-                <span className="text-text-secondary">InertiaJS</span>
-              </li>
-              <li>
-                <span className="text-text-secondary">Vue</span>
-              </li>
-              <li>
-                <span className="text-text-secondary">SQL</span>
+                <span className="text-text-secondary">Tailwind</span>
               </li>
             </ul>
           </div>
@@ -96,7 +96,7 @@ export default function About() {
         <Image
           width={1500}
           height={1500}
-          className="shadow-xl rounded-3xl"
+          className="rounded-md"
           src="/images/profile.jpeg"
           alt="Profile_Image"
         />
