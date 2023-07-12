@@ -28,7 +28,7 @@ export default function Hero() {
         working towards our mission of serving each other, and serving our
         clients.
       </p>
-      <div class="mt-4 flex gap-4">
+      <div className="mt-4 flex gap-4">
         <Link href="https://github.com/rileygrotenhuis" target="__blank">
           <Image src={GitHubLogo} width={32} height={32} alt="GitHub" />
         </Link>
