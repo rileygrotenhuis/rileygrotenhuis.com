@@ -96,7 +96,7 @@ export default function About() {
         <Image
           width={1500}
           height={1500}
-          className="rounded-md"
+          className="shadow-xl rounded-3xl"
           src="/images/profile.jpeg"
           alt="Profile_Image"
         />
