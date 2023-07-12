@@ -52,6 +52,7 @@ export default function Navbar() {
             {sections.map((item, index) => {
               return (
                 <ScrollLink
+                  href="/"
                   key={index}
                   to={item.selector}
                   smooth={true}
@@ -99,6 +100,7 @@ export default function Navbar() {
           {sections.map((item, index) => {
             return (
               <ScrollLink
+                href="/"
                 key={index}
                 to={item.selector}
                 smooth={true}
