@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import ProfileImage from '../../../public/images/Profile.jpeg';
 
 export default function About() {
   return (
@@ -98,7 +97,7 @@ export default function About() {
           width={1500}
           height={1500}
           className="shadow-xl rounded-3xl"
-          src={ProfileImage}
+          src="/images/profile.jpeg"
           alt="Profile_Image"
         />
       </div>
