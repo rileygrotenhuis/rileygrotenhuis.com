@@ -53,7 +53,7 @@ export default function About() {
               target="__blank"
             >
               {' '}
-              blog post{' '}
+              blog post
             </Link>
             !
           </p>
@@ -63,30 +63,30 @@ export default function About() {
           <div className="flex gap-32 text-text-secondary ml-4">
             <ul className="list-disc text-primary">
               <li>
-                <span className="text-text-secondary">TypeScript</span>
-              </li>
-              <li>
                 <span className="text-text-secondary">PHP</span>
-              </li>
-              <li>
-                <span className="text-text-secondary">Go</span>
-              </li>
-              <li>
-                <span className="text-text-secondary">Next.js</span>
-              </li>
-            </ul>
-            <ul className="list-disc text-primary">
-              <li>
-                <span className="text-text-secondary">Vue</span>
               </li>
               <li>
                 <span className="text-text-secondary">Laravel</span>
               </li>
               <li>
-                <span className="text-text-secondary">Go Fiber</span>
+                <span className="text-text-secondary">React</span>
               </li>
               <li>
-                <span className="text-text-secondary">Tailwind</span>
+                <span className="text-text-secondary">TailwindCSS</span>
+              </li>
+            </ul>
+            <ul className="list-disc text-primary">
+              <li>
+                <span className="text-text-secondary">Javascript</span>
+              </li>
+              <li>
+                <span className="text-text-secondary">InertiaJS</span>
+              </li>
+              <li>
+                <span className="text-text-secondary">Vue</span>
+              </li>
+              <li>
+                <span className="text-text-secondary">SQL</span>
               </li>
             </ul>
           </div>
