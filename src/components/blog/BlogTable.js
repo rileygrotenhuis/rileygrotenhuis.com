@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import BlogImage from '../../../public/images/Blog.svg';
 
 export default function BlogTable(props) {
   return (
@@ -12,12 +13,7 @@ export default function BlogTable(props) {
               href={`/blog/${item.slug}`}
               className="bg-background-secondary hover:shadow-xl transform hover:-translate-y-1 duration-300 hover:cursor-pointer text-text-secondary font-extralight px-4 py-8 rounded-lg w-72 flex flex-col gap-4 mx-auto"
             >
-              <Image
-                src="/images/blog.svg"
-                width={48}
-                height={48}
-                alt="BlogPost"
-              />
+              <Image src={BlogImage} width={48} height={48} alt="BlogPost" />
               <h3 className="text-text-primary hover:text-primary hover:cursor-pointer text-2xl font-normal">
                 {item.title}
               </h3>

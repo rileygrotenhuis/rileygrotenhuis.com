@@ -1,5 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import GitHubLogo from '../../../public/images/GitHubLogo.svg';
+import LinkedInLogo from '../../../public/images/LinkedInLogo.svg';
+import TwitterLogo from '../../../public/images/TwitterLogo.svg';
+import MetaLogo from '../../../public/images/MetaLogo.svg';
 
 export default function Hero() {
   return (
@@ -26,39 +30,19 @@ export default function Hero() {
       </p>
       <div class="mt-4 flex gap-4">
         <Link href="https://github.com/rileygrotenhuis" target="__blank">
-          <Image
-            src="/images/GitHubLogo.svg"
-            width={32}
-            height={32}
-            alt="GitHub"
-          />
+          <Image src={GitHubLogo} width={32} height={32} alt="GitHub" />
         </Link>
         <Link
           href="https://www.linkedin.com/in/rileygrotenhuis"
           target="__blank"
         >
-          <Image
-            src="/images/LinkedInLogo.svg"
-            width={32}
-            height={32}
-            alt="LinkedIn"
-          />
+          <Image src={LinkedInLogo} width={32} height={32} alt="LinkedIn" />
         </Link>
         <Link href="https://www.twitter.com/rileygrotenhuis" target="__blank">
-          <Image
-            src="/images/TwitterLogo.svg"
-            width={32}
-            height={32}
-            alt="Twitter"
-          />
+          <Image src={TwitterLogo} width={32} height={32} alt="Twitter" />
         </Link>
         <Link href="https://www.threads.net/@rileygrotenhuis" target="__blank">
-          <Image
-            src="/images/MetaLogo.svg"
-            width={32}
-            height={32}
-            alt="Threads"
-          />
+          <Image src={MetaLogo} width={32} height={32} alt="Threads" />
         </Link>
       </div>
     </div>
