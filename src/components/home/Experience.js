@@ -48,6 +48,7 @@ export default function Experience() {
           {experience.map((item, index) => {
             return (
               <button
+                aria-label={item.company}
                 key={index}
                 className={`cursor-pointer w-48 h-10 ${
                   item.index === experienceIndex

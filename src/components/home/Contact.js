@@ -16,7 +16,10 @@ export default function Contact() {
         will try my best to get back to you!
       </p>
       <Link href="mailto: rg@buildmidwestern.com">
-        <button className="py-4 px-8 mt-8 rounded-md border border-primary text-lg font-extralight text-primary">
+        <button
+          aria-label="Say Hellow"
+          className="py-4 px-8 mt-8 rounded-md border border-primary text-lg font-extralight text-primary"
+        >
           Say Hello
         </button>
       </Link>

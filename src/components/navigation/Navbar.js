@@ -41,6 +41,7 @@ export default function Navbar() {
           }`}
         >
           <button
+            aria-label="Sidebar Toggle"
             className="absolute top-12 right-12 flex flex-col items-center justify-center w-8 h-8 rounded-md"
             onClick={() => setIsMenuOpen(false)}
           >
@@ -80,6 +81,7 @@ export default function Navbar() {
         </div>
         <div className={`my-auto ${isMenuOpen ? 'hidden' : ''}`}>
           <button
+            aria-label="Menu"
             className="flex flex-col gap-2 items-center justify-center w-8 h-8 rounded-md"
             onClick={() => setIsMenuOpen(true)}
           >
