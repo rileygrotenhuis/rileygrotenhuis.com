@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -23,11 +24,43 @@ export default function Hero() {
         working towards our mission of serving each other, and serving our
         clients.
       </p>
-      <Link href="https://github.com/rileygrotenhuis" target="__blank">
-        <button className="border border-primary px-8 py-4 text-primary font-extralight rounded-md mt-8">
-          Check out my GitHub!
-        </button>
-      </Link>
+      <div class="mt-4 flex gap-4">
+        <Link href="https://github.com/rileygrotenhuis" target="__blank">
+          <Image
+            src="/images/GitHubLogo.svg"
+            width={32}
+            height={32}
+            alt="GitHub"
+          />
+        </Link>
+        <Link
+          href="https://www.linkedin.com/in/rileygrotenhuis"
+          target="__blank"
+        >
+          <Image
+            src="/images/LinkedInLogo.svg"
+            width={32}
+            height={32}
+            alt="LinkedIn"
+          />
+        </Link>
+        <Link href="https://www.twitter.com/rileygrotenhuis" target="__blank">
+          <Image
+            src="/images/TwitterLogo.svg"
+            width={32}
+            height={32}
+            alt="Twitter"
+          />
+        </Link>
+        <Link href="https://www.threads.net/@rileygrotenhuis" target="__blank">
+          <Image
+            src="/images/MetaLogo.svg"
+            width={32}
+            height={32}
+            alt="Threads"
+          />
+        </Link>
+      </div>
     </div>
   );
 }
