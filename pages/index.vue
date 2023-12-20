@@ -1,7 +1,5 @@
 <template>
-  <LazyHeroSection
-    class="w-5/6 md:w-4/6 mx-auto mt-8 md:mt-24 max-w-[1100px]"
-  />
+  <HeroSection class="w-5/6 md:w-4/6 mx-auto mt-8 md:mt-24 max-w-[1100px]" />
 </template>
 
 <script setup lang="ts">
