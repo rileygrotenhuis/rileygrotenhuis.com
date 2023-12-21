@@ -18,8 +18,12 @@
       clients.
     </p>
     <div class="flex gap-2 items-center">
-      <IconsGitHubIcon />
-      <IconsLinkedInIcon />
+      <a href="https://github.com/rileygrotenhuis" target="__blank">
+        <IconsGitHubIcon />
+      </a>
+      <a href="https://www.linkedin.com/in/rileygrotenhuis" target="__blank">
+        <IconsLinkedInIcon />
+      </a>
     </div>
   </div>
 </template>
