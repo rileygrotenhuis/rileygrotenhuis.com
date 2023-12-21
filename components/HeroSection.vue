@@ -16,7 +16,7 @@
         href="https://www.buildmidwestern.com/"
         >Midwestern Interactive
       </a>
-      based in Springfield, Missouri.
+      based in Springfield, MO.
     </p>
     <div class="flex gap-2 items-center">
       <a href="https://github.com/rileygrotenhuis" target="__blank">
