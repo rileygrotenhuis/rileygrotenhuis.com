@@ -6,14 +6,14 @@
         About Me
       </h3>
       <div class="flex flex-col gap-4">
-        <p class="leading-6">
+        <p class="leading-6 font-light">
           Hi! My name is Riley and I love all things web development. My
           interest in programming started back in 2015 when I decided to take my
           first computer science course in high school. Since then I have done
           extensive self learning and spent some time at Missouri State
           University studying computer science.
         </p>
-        <p class="leading-6">
+        <p class="leading-6 font-light">
           I have had the privilege of working at
           <a
             class="text-primary hover:underline"
@@ -35,7 +35,7 @@
           </a>
           for our various amounts of clients.
         </p>
-        <p class="text-text-secondary leading-6">
+        <p class="leading-6 font-light">
           You can learn a little bit more about me and my journey as a developer
           here in this
           <a
@@ -47,7 +47,7 @@
           </a>
           !
         </p>
-        <p class="leading-6">
+        <p class="leading-6 font-light">
           Here are a few technologies I have been working with recently:
         </p>
         <div class="flex gap-32 ml-4">
