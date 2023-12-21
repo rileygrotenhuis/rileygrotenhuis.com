@@ -3,7 +3,7 @@
     <div class="my-auto flex flex-col gap-8">
       <h3 class="text-text-primary text-3xl">
         <span class="text-primary text-xl">01. </span>
-        About Me
+        A little bit about myself
       </h3>
       <div class="flex flex-col gap-4">
         <p class="leading-6 font-light">

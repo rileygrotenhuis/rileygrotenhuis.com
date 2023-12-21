@@ -2,7 +2,7 @@
   <div>
     <h3 class="text-text-primary text-3xl">
       <span class="text-primary text-xl">03. </span>
-      Some of my Projects
+      Some of my personal projects
     </h3>
     <div class="flex flex-col md:flex-row gap-4">
       <div class="flex flex-row md:flex-col text-sm font-extralight">
