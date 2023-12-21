@@ -21,7 +21,7 @@
         </button>
       </div>
       <div>
-        <h3 class="text-text-primary text-lg">
+        <h3 class="text-lg">
           {{ experiences[experienceIndex].title }}
           <a
             :href="experiences[experienceIndex].company_url"

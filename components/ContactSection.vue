@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="text-primary text-lg">03. What Next?</p>
+    <p class="text-primary text-lg">04. What Next?</p>
     <h3 class="text-5xl text-text-primary mt-4 font-bold">Get In Touch</h3>
     <p class="text-text-secondary mt-4">
       Although I am not currently looking for any new opportunities, my inbox is
