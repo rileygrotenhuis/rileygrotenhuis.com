@@ -12,6 +12,11 @@
       />
       <USlideover v-model="isOpen">
         <div class="p-4 flex-1 mt-4">
+          <span
+            class="text-2xl mb-4 float-right hover:cursor-pointer"
+            @click="isOpen = false"
+            >X</span
+          >
           <ul class="flex flex-col gap-6">
             <li
               v-for="(link, i) in navigationLinks"
