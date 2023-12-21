@@ -4,6 +4,14 @@
     id="about"
     class="w-3/4 lg:w-7/12 mx-auto mt-72 flex flex-col md:flex-row gap-16 xl:mt-96 max-w-[1000px]"
   />
+  <ExperienceSection
+    id="experience"
+    class="w-3/4 lg:w-1/2 mx-auto mt-72 xl:mt-96 flex flex-col gap-12 max-w-[1000px]"
+  />
+  <ContactSection
+    id="contact"
+    class="w-3/4 lg:w-[550px] text-center mx-auto mt-72 xl:mt-96 font-extralight"
+  />
 </template>
 
 <script setup lang="ts">
