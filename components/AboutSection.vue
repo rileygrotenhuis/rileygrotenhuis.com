@@ -7,14 +7,12 @@
       </h3>
       <div class="flex flex-col gap-4">
         <p class="leading-6 font-light">
-          Hi! My name is Riley and I love all things web development. My
-          interest in programming started back in 2015 when I decided to take my
-          first computer science course in high school. Since then I have done
-          extensive self learning and spent some time at Missouri State
-          University studying computer science.
+          Hi! My name is Riley Grotenhuis and I love all things development. I
+          have been working professionally as a software engineer for 3 years,
+          but have been writing code for nearly 10 years!
         </p>
         <p class="leading-6 font-light">
-          I have had the privilege of working at
+          I have had the privilege of beginning my professional career at
           <a
             class="text-primary hover:underline"
             href="https://www.missouristate.edu/Web/default.htm"
@@ -22,10 +20,9 @@
           >
             Missouri State University
           </a>
-          as a student web developer where I worked on a lot of their internal
-          tooling as well as various web applications. Fast forward to today, I
-          have put a halt on my formal education and my main focus today is
-          building full stack applications at
+          working as a student web developer while I was studying computer
+          science. Fast forward to today and I am not working as a software
+          engineer at
           <a
             class="text-primary hover:underline"
             href="https://www.buildmidwestern.com"
@@ -33,18 +30,18 @@
           >
             Midwestern Interactive
           </a>
-          for our various amounts of clients.
+          , where I have been for the past 2 years.
         </p>
         <p class="leading-6 font-light">
-          You can learn a little bit more about me and my journey as a developer
-          here in this
-          <a
+          If you'd like to learn a little bit more about my journey so far as a
+          developer, you ran read about it in my
+          <NuxtLink
             class="text-primary hover:underline"
             href="/blog/my-career-so-far"
             target="__blank"
           >
             blog post
-          </a>
+          </NuxtLink>
           !
         </p>
         <p class="leading-6 font-light">
@@ -56,13 +53,13 @@
               <span>TypeScript</span>
             </li>
             <li>
-              <span>Javascript</span>
-            </li>
-            <li>
               <span>Php</span>
             </li>
             <li>
               <span>Go</span>
+            </li>
+            <li>
+              <span>Docker</span>
             </li>
           </ul>
           <ul class="list-disc text-primary">
