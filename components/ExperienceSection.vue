@@ -12,8 +12,8 @@
           :aria-label="experience.company"
           :class="`cursor-pointer w-48 h-10 ${
             experience.index === experienceIndex
-              ? 'text-primary'
-              : 'text-text-secondary'
+              ? 'text-primary border-primary'
+              : 'text-white border-white'
           } hover:text-primary border-l`"
           @click="experienceIndex = experience.index"
         >
