@@ -6,7 +6,10 @@
       RG
     </h1>
     <div class="flex md:hidden">
-      <IconsHamburgerMenuIcon @click="isOpen = true" />
+      <IconsHamburgerMenuIcon
+        class="hover:cursor-pointer"
+        @click="isOpen = true"
+      />
       <USlideover v-model="isOpen">
         <div class="p-4 flex-1 mt-4">
           <ul class="flex flex-col gap-6">
