@@ -35,13 +35,13 @@
         <p class="leading-6 font-light">
           If you'd like to learn a little bit more about my journey so far as a
           developer, you ran read about it in my
-          <NuxtLink
+          <a
             class="text-primary hover:underline"
-            href="/blog/my-career-so-far"
+            href="https://rileygrotenhuis.medium.com/my-developer-journey-0260f79801f9"
             target="__blank"
           >
             blog post
-          </NuxtLink>
+          </a>
           !
         </p>
         <p class="leading-6 font-light">

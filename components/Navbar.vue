@@ -48,13 +48,13 @@
         <span class="text-primary">0{{ i + 1 }}. </span>
         {{ link }}
       </li>
-      <NuxtLink to="/blog">
+      <a href="https://rileygrotenhuis.medium.com" target="__blank">
         <li
           class="text-primary text-sm border border-primary font-extralight my-auto py-1 px-4 rounded-md"
         >
           Blog
         </li>
-      </NuxtLink>
+      </a>
     </ul>
   </nav>
 </template>
