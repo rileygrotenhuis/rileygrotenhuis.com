@@ -22,6 +22,7 @@
               v-for="(link, i) in navigationLinks"
               :key="link"
               class="font-light text-white hover:text-primary hover:cursor-pointer"
+              @click="scrollToSection(link.toLowerCase())"
             >
               <span class="text-primary">0{{ i + 1 }}. </span>
               {{ link }}
@@ -42,6 +43,7 @@
         v-for="(link, i) in navigationLinks"
         :key="link"
         class="font-light text-sm text-white hover:text-primary hover:cursor-pointer"
+        @click="scrollToSection(link.toLowerCase())"
       >
         <span class="text-primary">0{{ i + 1 }}. </span>
         {{ link }}
@@ -61,4 +63,9 @@
 const isOpen = ref(false);
 
 const navigationLinks = ['About', 'Experience', 'Projects', 'Contact'];
+
+const scrollToSection = async (section: string) => {
+  isOpen.value = false;
+  await navigateTo(`/#${section}`);
+};
 </script>
