@@ -71,9 +71,9 @@ const experiences = [
     company_url: 'https://www.missouristate.edu/Web/default.htm',
     dates: 'January 2021 - November 2021',
     description: [
-      'Developed internal tooling and web applications for Missouri State using .NET technologies that were used by thousands of students, faculty, and staff within the university limits',
-      'Built and shipped an internal tool that migrated thousands of web component building blocks from one CMS to another, savings many hours of manual labor work from other student workers',
-      'Collaborated closely with the Student Employment department to design and develop version 2 of their student worker onboarding and screening softwares',
+      'Developed and maintained applications and internal tools used at Missouri State University by various faculty, staff, and students.',
+      'Increased the efficiency of a transition in content management systems by writing a tool that utilized the APIs of both CMSs to migrate web assets from one platform to another without the need for long, manual work.',
+      'Collaborated closely with the student employment offices to add features and improve their internal tool that handled their approval process for student employment candidates.',
     ],
   },
 ];
