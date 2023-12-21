@@ -27,13 +27,13 @@
               <span class="text-primary">0{{ i + 1 }}. </span>
               {{ link }}
             </li>
-            <NuxtLink to="/blog">
+            <a href="https://rileygrotenhuis.medium.com" target="__blank">
               <li
                 class="text-primary w-[100px] text-sm text-center border border-primary font-extralight my-auto py-1 px-4 rounded-md"
               >
                 Blog
               </li>
-            </NuxtLink>
+            </a>
           </ul>
         </div>
       </USlideover>
