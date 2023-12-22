@@ -7,9 +7,9 @@
       </h3>
       <div class="flex flex-col gap-4">
         <p class="leading-6 font-light">
-          Hi! My name is Riley Grotenhuis and I love all things development. I
-          have been working professionally as a software engineer for 3 years,
-          but have been writing code for nearly 10 years!
+          Hi! My name is Riley Grotenhuis and I love all things programming and
+          computers. I have been working professionally as a software engineer
+          for 3 years, but have been writing code for nearly 10 years!
         </p>
         <p class="leading-6 font-light">
           I have had the privilege of beginning my professional career at
@@ -20,8 +20,8 @@
           >
             Missouri State University
           </a>
-          working as a student web developer while I was studying computer
-          science. Fast forward to today and I am not working as a software
+          , where I worked as a student web developer while studying computer
+          science. Fast forward to today and I am now working as a software
           engineer at
           <a
             class="text-primary hover:underline"
