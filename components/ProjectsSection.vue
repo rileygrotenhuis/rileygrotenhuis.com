@@ -25,7 +25,7 @@
           <a
             :href="projects[projectIndex].url"
             target="__blank"
-            class="text-primary"
+            class="text-primary hover:underline"
           >
             {{ projects[projectIndex].title }}
           </a>
@@ -34,9 +34,16 @@
           {{ projects[projectIndex].subtitle }}
         </p>
         <ul class="flex flex-col gap-2 list-disc text-primary ml-4 mt-4">
+          <li
+            v-for="(text, index) in projects[projectIndex].description"
+            :key="index"
+          >
+            <span class="text-white font-light">{{ text }}</span>
+          </li>
           <li>
             <span class="text-white font-light">
-              {{ projects[projectIndex].description }}
+              Technologies Used:
+              {{ projects[projectIndex].technologies.join(', ') }}
             </span>
           </li>
         </ul>
@@ -54,18 +61,24 @@ const projects = [
     title: 'Corvesive',
     subtitle: 'Segmented budgeting tool built using Laravel and Nuxt',
     url: 'https://www.corvesive.com',
-    technologies: ['Laravel', 'Nuxt', 'MySQL'],
-    description:
-      'Corvesive is a budgeting application that focuses on tracking your personal finances over the course of customizable periods of times. This project has seen multiple iterations all trying to solve some of my own personal financial goals and needs, but this was the first time I have built it with the intention of releasing it to the public. You can signup for a free account and start trakcing your finances today!',
+    description: [
+      'Corvesive is a budgeting application that focuses on tracking your personal finances over customizable segments of time.',
+      'This project has seem multiple iterations over the entirety of 2023, including the original version that was created with the purpose of tracking a personal daily allowance that I gave myself during one of my vacations. That then transitioned into focusing on more modern budgeting application until the current version that exists today.',
+      'After registering with Corvesive, users gain the ability to input their paystubs, bills, budgets, and savings they have throughout the month. Users can then enhance their financial oversight by organizing monthly transactions into more personalized and adaptable time segments called Pay Periods. Additionally, our platform offers comprehensive metrics and dashboard reports to facilitate a more insightful overview of your monthly finances that work in tandem with our transactions feature.',
+    ],
+    technologies: ['Laravel', 'Nuxt', 'TailwindCSS', 'MySQL'],
   },
   {
     index: 1,
     title: 'rbranch',
     subtitle: 'Custom CLI tool for Git branch operations',
     url: 'https://github.com/rileygrotenhuis/rbranch',
+    description: [
+      'rbranch is a custom CLI tool used for making Git branch operations much easier.',
+      'The motivation for making this tool came from working on projects that utilize issue tracking tools like Jira or Trello, and having Git branch names having issue ID prefixes attached to them. This can make doing simple Git branch operations like merging, rebasing, and even simple operations like checking out a branch, much more time consuming. Now I probably could’ve just found a tool that probably already exists, but instead of taking the five seconds to Google it I decided to use it as an excuse to learn Go and build something useful at the same time.',
+      'Users simply type “rbranch” followed by an optional command flag to denote the branch operation, to produce a list of their available Git branches in which they can select from using their arrow keys and your keyboard. Instead of using some helpful built-in features in most modern terminals, users can view all available branches in a larger window to scroll and select from.',
+    ],
     technologies: ['Go', 'Bubbletea'],
-    description:
-      'On certain projects that I have been apart of in the past, I have found myself typing out annoying Git branch names with specific issue tracking numbers and other prefixes. Instead of taking the 5 minutes to search a pre-existing solution for this problem (or even using a Git GUI), I decided to build it myself. I also slightly am using this as an on-going excuse to learn Go.',
   },
 ];
 </script>
