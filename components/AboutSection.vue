@@ -37,7 +37,7 @@
           developer, you ran read about it in my
           <a
             class="text-primary hover:underline"
-            href="https://rileygrotenhuis.medium.com/my-developer-journey-0260f79801f9"
+            href="https://dev.to/rileygrotenhuis/my-developer-journey-5046"
             target="__blank"
           >
             blog post

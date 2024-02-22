@@ -27,7 +27,7 @@
               <span class="text-primary">0{{ i + 1 }}. </span>
               {{ link }}
             </li>
-            <a href="https://rileygrotenhuis.medium.com" target="__blank">
+            <a href="https://dev.to/rileygrotenhuis" target="__blank">
               <li
                 class="text-primary w-[100px] text-sm text-center border border-primary font-extralight my-auto py-1 px-4 rounded-md"
               >
@@ -48,7 +48,7 @@
         <span class="text-primary">0{{ i + 1 }}. </span>
         {{ link }}
       </li>
-      <a href="https://rileygrotenhuis.medium.com" target="__blank">
+      <a href="https://dev.to/rileygrotenhuis" target="__blank">
         <li
           class="text-primary text-sm border border-primary font-extralight my-auto py-1 px-4 rounded-md"
         >
@@ -62,7 +62,7 @@
 <script setup lang="ts">
 const isOpen = ref(false);
 
-const navigationLinks = ['About', 'Experience', 'Projects', 'Contact'];
+const navigationLinks = ["About", "Experience", "Projects", "Contact"];
 
 const scrollToSection = async (section: string) => {
   isOpen.value = false;
