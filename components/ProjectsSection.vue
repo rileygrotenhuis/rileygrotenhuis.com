@@ -80,5 +80,17 @@ const projects = [
     ],
     technologies: ['Go', 'Bubbletea'],
   },
+  {
+    index: 2,
+    title: 'Ripcord',
+    subtitle: 'Build chart.js components with PHP',
+    url: 'https://github.com/rileygrotenhuis/ripcord',
+    description: [
+      'Ripcord is a lightweight and user-friendly Composer package designed to streamline the creation of chart.js components in PHP, facilitating seamless integration with frontend JavaScript applications.',
+      'Utilizing the included chart builder class, you gain the capability to effortlessly create a variety of chart types. This tool provides access to an array of methods for validating your chart data and generating the requisite code to render your chart accurately and efficiently.',
+      'Ripcord currently offers the following chart types: bar, line, pie, scatter, and bubble.',
+    ],
+    technologies: ['PHP', 'Composer'],
+  },
 ];
 </script>
