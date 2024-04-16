@@ -66,10 +66,22 @@ const projects = [
       'This project has seem multiple iterations over the entirety of 2023, including the original version that was created with the purpose of tracking a personal daily allowance that I gave myself during one of my vacations. That then transitioned into focusing on more modern budgeting application until the current version that exists today.',
       'After registering with Corvesive, users gain the ability to input their paystubs, bills, budgets, and savings they have throughout the month. Users can then enhance their financial oversight by organizing monthly transactions into more personalized and adaptable time segments called Pay Periods. Additionally, our platform offers comprehensive metrics and dashboard reports to facilitate a more insightful overview of your monthly finances that work in tandem with our transactions feature.',
     ],
-    technologies: ['Laravel', 'Nuxt', 'TailwindCSS', 'MySQL'],
+    technologies: ['Laravel', 'Vue', 'InertiaJS', 'TailwindCSS', 'MySQL'],
   },
   {
     index: 1,
+    title: 'AirQueue',
+    subtitle: 'Share music with your friends with Live Sessions!',
+    url: 'https://www.airqueue.live',
+    description: [
+      'AirQueue is a platform that allows you to share your music taste with your friends and other members.',
+      'Create groups and start Live Sessions with other members to begin requesting songs and waiting for other incoming requests.',
+      'Integrate your AirQueue account with Spotify to ease the incoming song requests!',
+    ],
+    technologies: ['Laravel', 'Vue', 'InertiaJS', 'TailwindCSS', 'MySQL'],
+  },
+  {
+    index: 2,
     title: 'rbranch',
     subtitle: 'Custom CLI tool for Git branch operations',
     url: 'https://github.com/rileygrotenhuis/rbranch',
@@ -81,7 +93,7 @@ const projects = [
     technologies: ['Go', 'Bubbletea'],
   },
   {
-    index: 2,
+    index: 3,
     title: 'Ripcord',
     subtitle: 'Build chart.js components with PHP',
     url: 'https://github.com/rileygrotenhuis/ripcord',
