@@ -37,10 +37,10 @@ const submitContactForm = () => {
 
 <template>
   <button
-    class="bg-primary-600 text-white px-4 py-1 rounded-md font-bold hover:bg-primary-700 transition-all"
+    class="bg-primary-600 text-white px-4 py-1 rounded-md font-semibold hover:bg-primary-700 transition-all"
     @click.prevent="showContactModal = true"
   >
-    Send me a message
+    Send a message
   </button>
 
   <Modal :show="showContactModal" @close="showContactModal = false">

@@ -31,7 +31,7 @@ const learnMoreScroll = () => {
       </p>
       <p class="block sm:hidden text-2xl">Software Engineer</p>
       <button
-        class="mt-4 bg-primary-600 text-white px-4 py-1 rounded-md font-bold hover:bg-primary-700 transition-all"
+        class="mt-4 bg-primary-600 text-white px-4 py-1 rounded-md font-semibold hover:bg-primary-700 transition-all"
         @click.prevent="learnMoreScroll"
       >
         Get to know me

@@ -18,7 +18,7 @@ const pages = ref([
         <h1 class="text-2xl font-bold uppercase"></h1>
 
         <a
-          class="bg-primary-700 text-white px-6 py-1 rounded-md font-bold hover:bg-primary-500"
+          class="bg-primary-700 text-white text-sm px-6 py-1 rounded-md font-semibold hover:bg-primary-500"
           href="https://dev.to/rileygrotenhuis"
           target="_blank"
         >

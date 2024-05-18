@@ -22,7 +22,7 @@
         <a
           href="https://github.com/rileygrotenhuis"
           target="_blank"
-          class="text-white bg-primary-700 px-4 py-2 rounded-md mt-4 font-bold hover:bg-primary-500"
+          class="text-white bg-primary-700 px-4 py-2 rounded-md mt-4 font-semibold hover:bg-primary-500"
         >
           My projects
         </a>
