@@ -10,21 +10,28 @@ const pages = ref([
 </script>
 
 <template>
-  <nav>
-    <div class="max-w-4xl mx-auto flex justify-between items-center px-2 py-6">
-      <h1 class="text-2xl font-bold uppercase">Riley.</h1>
+  <div>
+    <nav>
+      <div
+        class="max-w-4xl mx-auto flex justify-between items-center px-4 py-6"
+      >
+        <h1 class="text-2xl font-bold uppercase">Riley.</h1>
 
-      <ul class="flex items-center space-x-12">
-        <li
-          v-for="page in pages"
-          :key="page.label"
-          class="uppercase font-bold text-xs"
-        >
-          <a :href="page.path">
-            {{ page.label }}
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+        <ul class="flex items-center space-x-12">
+          <li
+            v-for="page in pages"
+            :key="page.label"
+            class="uppercase font-bold text-xs"
+          >
+            <a :href="page.path">
+              {{ page.label }}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="max-w-4xl mx-auto px-4 mt-8">
+      <slot />
+    </main>
+  </div>
 </template>
