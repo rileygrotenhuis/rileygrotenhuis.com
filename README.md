@@ -1,6 +1,6 @@
 # rileygrotenhuis.com
 
-My official website.g
+My official website.
 
 ## Prerequisites
 
