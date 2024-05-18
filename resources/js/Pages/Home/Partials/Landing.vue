@@ -9,15 +9,15 @@ const learnMoreScroll = () => {
 
 <template>
   <div
-    class="max-w-4xl mx-auto px-4 flex justify-between items-center gap-12 mt-24"
+    class="max-w-4xl mx-auto px-8 flex justify-between items-center gap-12 mt-24"
   >
-    <div>
+    <div class="hidden sm:block">
       <img src="/images/hero.svg" alt="Hero Image" class="w-[400px]" />
     </div>
 
     <div class="w-full">
-      <h1 class="text-4xl font-bold mb-2">Hi, I'm Riley.</h1>
-      <p class="text-sm">
+      <h1 class="text-6xl sm:text-4xl font-bold mb-2">Hi, I'm Riley.</h1>
+      <p class="hidden sm:block text-sm">
         Software Engineer at Midwestern Interactive. I also enjoy creating
         developer tools and am currently building
         <a
@@ -29,6 +29,7 @@ const learnMoreScroll = () => {
         </a>
         to help provide budgeting solutions.
       </p>
+      <p class="block sm:hidden text-lg">Software Engineer</p>
       <button
         class="mt-4 bg-primary-600 text-white px-4 py-1 rounded-md font-bold hover:bg-primary-700 transition-all"
         @click.prevent="learnMoreScroll"

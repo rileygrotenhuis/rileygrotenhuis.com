@@ -1,7 +1,7 @@
 <template>
   <div class="w-full bg-primary-300">
     <div
-      class="max-w-4xl mx-auto px-4 py-8 flex flex-wrap-reverse justify-center items-center gap-8"
+      class="max-w-4xl mx-auto px-8 py-8 flex flex-wrap justify-center items-center gap-8"
     >
       <div>
         <img

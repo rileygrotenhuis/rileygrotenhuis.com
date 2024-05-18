@@ -13,7 +13,7 @@ const pages = ref([
   <div>
     <nav>
       <div
-        class="max-w-4xl mx-auto flex justify-between items-center px-4 py-6"
+        class="max-w-4xl mx-auto flex justify-between items-center px-8 py-6"
       >
         <h1 class="text-2xl font-bold uppercase">RG.</h1>
 
