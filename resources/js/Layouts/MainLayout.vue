@@ -17,17 +17,13 @@ const pages = ref([
       >
         <h1 class="text-2xl font-bold uppercase">RG.</h1>
 
-        <ul class="flex items-center space-x-12">
-          <li
-            v-for="page in pages"
-            :key="page.label"
-            class="uppercase font-bold text-xs"
-          >
-            <a :href="page.path">
-              {{ page.label }}
-            </a>
-          </li>
-        </ul>
+        <a
+          class="bg-primary-700 text-white px-6 py-1 rounded-md font-bold hover:bg-primary-500"
+          href="https://dev.to/rileygrotenhuis"
+          target="_blank"
+        >
+          My Blog
+        </a>
       </div>
     </nav>
     <main>
