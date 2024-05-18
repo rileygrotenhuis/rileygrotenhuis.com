@@ -15,7 +15,7 @@ const pages = ref([
       <div
         class="max-w-4xl mx-auto flex justify-between items-center px-4 py-6"
       >
-        <h1 class="text-2xl font-bold uppercase">Riley.</h1>
+        <h1 class="text-2xl font-bold uppercase">RG.</h1>
 
         <ul class="flex items-center space-x-12">
           <li
@@ -30,7 +30,7 @@ const pages = ref([
         </ul>
       </div>
     </nav>
-    <main class="max-w-4xl mx-auto px-4 mt-8">
+    <main class="max-w-4xl mx-auto px-4">
       <slot />
     </main>
   </div>
