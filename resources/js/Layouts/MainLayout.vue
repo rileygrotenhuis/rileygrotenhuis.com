@@ -30,7 +30,7 @@ const pages = ref([
         </ul>
       </div>
     </nav>
-    <main class="max-w-4xl mx-auto px-4">
+    <main>
       <slot />
     </main>
   </div>

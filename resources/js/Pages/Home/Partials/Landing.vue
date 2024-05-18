@@ -1,5 +1,7 @@
 <template>
-  <div class="flex justify-between items-center gap-12 mt-24">
+  <div
+    class="max-w-4xl mx-auto px-4 flex justify-between items-center gap-12 mt-24"
+  >
     <div>
       <img src="/images/hero.svg" alt="Hero Image" class="w-[400px]" />
     </div>
