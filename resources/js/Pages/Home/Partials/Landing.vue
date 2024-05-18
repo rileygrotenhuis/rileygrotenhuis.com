@@ -1,3 +1,12 @@
+<script setup>
+const learnMoreScroll = () => {
+  window.scrollTo({
+    top: 500,
+    behavior: 'smooth',
+  });
+};
+</script>
+
 <template>
   <div
     class="max-w-4xl mx-auto px-4 flex justify-between items-center gap-12 mt-24"
@@ -20,6 +29,12 @@
         </a>
         to help provide budgeting solutions.
       </p>
+      <button
+        class="mt-4 bg-primary-600 text-white px-4 py-1 rounded-md font-bold hover:bg-primary-700 transition-all"
+        @click.prevent="learnMoreScroll"
+      >
+        Learn More
+      </button>
     </div>
   </div>
 </template>
