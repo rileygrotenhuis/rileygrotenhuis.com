@@ -1,7 +1,7 @@
 <script setup>
 const learnMoreScroll = () => {
   window.scrollTo({
-    top: 500,
+    top: 750,
     behavior: 'smooth',
   });
 };
@@ -16,7 +16,7 @@ const learnMoreScroll = () => {
     </div>
 
     <div class="w-full">
-      <h1 class="text-6xl sm:text-4xl font-bold mb-2">Hi, I'm Riley.</h1>
+      <h1 class="text-6xl font-bold mb-2">Hi, I'm Riley.</h1>
       <p class="hidden sm:block text-sm">
         Software Engineer at Midwestern Interactive. I also enjoy creating
         developer tools and am currently building
@@ -29,12 +29,12 @@ const learnMoreScroll = () => {
         </a>
         to help provide budgeting solutions.
       </p>
-      <p class="block sm:hidden text-lg">Software Engineer</p>
+      <p class="block sm:hidden text-2xl">Software Engineer</p>
       <button
         class="mt-4 bg-primary-600 text-white px-4 py-1 rounded-md font-bold hover:bg-primary-700 transition-all"
         @click.prevent="learnMoreScroll"
       >
-        Learn More
+        Get to know me
       </button>
     </div>
   </div>

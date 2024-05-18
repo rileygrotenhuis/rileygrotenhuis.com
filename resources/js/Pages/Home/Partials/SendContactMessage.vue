@@ -40,7 +40,7 @@ const submitContactForm = () => {
     class="bg-primary-600 text-white px-4 py-1 rounded-md font-bold hover:bg-primary-700 transition-all"
     @click.prevent="showContactModal = true"
   >
-    Get in Touch
+    Send me a message
   </button>
 
   <Modal :show="showContactModal" @close="showContactModal = false">
