@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import SendContactMessage from '@/Pages/Home/Partials/SendContactMessage.vue';
+</script>
 
 <template>
   <div
@@ -19,12 +21,14 @@
         for Midwestern Interactive as a software engineer, but have a little
         over 3 years of professional experience in the industry.
       </p>
-      <p class="text-white text-sm font-semibold">
+      <p class="text-white text-sm font-semibold mb-4">
         I’m excited to share Corvesive with you all as it’s been my passion
         project, and has seen multiple iterations for the better part of 2
         years. I hope to make your every day budgeting needs a little bit easier
         with these solutions!
       </p>
+
+      <SendContactMessage />
     </div>
   </div>
 </template>
