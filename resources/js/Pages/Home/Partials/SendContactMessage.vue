@@ -15,6 +15,24 @@ const contactForm = useForm({
 const contactFormIsValid = computed(() => {
   return contactForm.name && contactForm.email && contactForm.message;
 });
+
+const submitContactForm = () => {
+  if (Boolean(contactFormIsValid.value)) {
+    contactForm.post(route('send-contact-message'), {
+      preserveScroll: true,
+      onSuccess: () => {
+        showContactModal.value = false;
+        contactForm.reset();
+        alert(
+          'Thanks for reaching out! I will get back to you as soon as possible.'
+        );
+      },
+      onError: () => {
+        alert('There was an error sending your message. Please try.');
+      },
+    });
+  }
+};
 </script>
 
 <template>
@@ -35,7 +53,7 @@ const contactFormIsValid = computed(() => {
         will try my best to get back to you!
       </p>
 
-      <form class="mt-8">
+      <form @submit.prevent="submitContactForm" class="mt-8">
         <div>
           <label for="name" class="text-black text-sm font-semibold"
             >Full name</label
