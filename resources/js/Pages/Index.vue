@@ -1,3 +1,9 @@
+<script setup>
+import MainLayout from '@/Layouts/MainLayout.vue';
+</script>
+
 <template>
-  <h1>Riley Grotenhuis</h1>
+  <MainLayout>
+    <h1>Riley Grotenhuis</h1>
+  </MainLayout>
 </template>
