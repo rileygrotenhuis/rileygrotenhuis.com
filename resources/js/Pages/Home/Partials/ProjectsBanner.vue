@@ -7,7 +7,7 @@
         <img
           src="/images/projects.svg"
           alt="Projects Banner"
-          class="w-[325px]"
+          class="w-[225px] sm:w-[325px]"
         />
       </div>
 

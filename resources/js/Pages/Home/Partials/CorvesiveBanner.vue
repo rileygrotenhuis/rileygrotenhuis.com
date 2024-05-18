@@ -24,7 +24,11 @@
       </div>
 
       <div>
-        <img src="/images/graph.svg" alt="Corvesive Banner" class="w-[325px]" />
+        <img
+          src="/images/graph.svg"
+          alt="Corvesive Banner"
+          class="w-[225px] sm:w-[325px]"
+        />
       </div>
     </div>
   </div>

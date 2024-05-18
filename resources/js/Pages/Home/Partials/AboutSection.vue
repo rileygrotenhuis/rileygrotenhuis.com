@@ -4,13 +4,13 @@ import SendContactMessage from '@/Pages/Home/Partials/SendContactMessage.vue';
 
 <template>
   <div
-    class="max-w-4xl mx-auto px-8 py-36 flex justify-center items-center gap-8"
+    class="max-w-4xl mx-auto px-8 py-12 sm:py-24 flex flex-col sm:flex-row justify-center items-center gap-8"
   >
     <div>
       <img
         src="/images/headshot.jpg"
         alt="Headshot"
-        class="w-[400px] rounded-2xl"
+        class="w-[250px] sm:w-[400px] rounded-2xl"
       />
     </div>
 
