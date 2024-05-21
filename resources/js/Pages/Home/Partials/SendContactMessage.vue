@@ -40,14 +40,14 @@ const submitContactForm = () => {
     class="bg-primary-600 text-white px-4 py-1 rounded-md font-semibold hover:bg-primary-700 transition-all"
     @click.prevent="showContactModal = true"
   >
-    Send a message
+    Get connected
   </button>
 
   <Modal :show="showContactModal" @close="showContactModal = false">
     <div class="p-6">
       <h3 class="text-black text-2xl font-bold">Send me a message!</h3>
 
-      <p class="text-black text-sm font-semibold mt-2 max-w-[550px]">
+      <p class="text-black text-sm font-semibold mt-2 w-[550px]">
         Although I am not currently looking for any new opportunities, my inbox
         is always open. Whether you have a question or just want to say hi, I
         will try my best to get back to you!
