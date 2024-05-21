@@ -45,60 +45,50 @@ const submitContactForm = () => {
 
   <Modal :show="showContactModal" @close="showContactModal = false">
     <div class="p-6">
-      <h3 class="text-black text-2xl font-bold">Send me a message!</h3>
+      <h3 class="text-black text-3xl font-semibold">Say hello!</h3>
 
-      <p class="text-black text-sm font-semibold mt-2 w-[550px]">
-        Although I am not currently looking for any new opportunities, my inbox
-        is always open. Whether you have a question or just want to say hi, I
-        will try my best to get back to you!
-      </p>
-
-      <form @submit.prevent="submitContactForm" class="mt-8">
+      <form @submit.prevent="submitContactForm" class="mt-4">
         <div>
-          <label for="name" class="text-black text-sm font-semibold"
-            >Full name</label
-          >
+          <label for="name" class="text-gray-700 text-sm">Full name</label>
           <input
             type="text"
             id="name"
             v-model="contactForm.name"
-            class="w-full border border-gray-300 rounded-md p-2 mt-1 text-black font-bold"
+            placeholder="Master Chief"
+            class="w-full border border-gray-300 rounded-md p-2 mt-1 text-black placeholder-gray-400"
           />
         </div>
 
         <div class="mt-4">
-          <label for="email" class="text-black text-sm font-semibold"
-            >Email address</label
-          >
+          <label for="email" class="text-gray-700 text-sm">Email address</label>
           <input
             type="email"
             id="email"
             v-model="contactForm.email"
-            class="w-full border border-gray-300 rounded-md p-2 mt-1 text-black font-bold"
+            placeholder="masterchief@cortana.com"
+            class="w-full border border-gray-300 rounded-md p-2 mt-1 text-black placeholder-gray-400"
           />
         </div>
 
         <div class="mt-4">
-          <label for="phone" class="text-black text-sm font-semibold"
-            >Phone number</label
-          >
+          <label for="phone" class="text-gray-700 text-sm">Phone number</label>
           <input
             type="tel"
             id="phone"
             v-model="contactForm.phone"
-            class="w-full border border-gray-300 rounded-md p-2 mt-1 text-black font-bold"
+            placeholder="117-117-1117"
+            class="w-full border border-gray-300 rounded-md p-2 mt-1 text-black placeholder-gray-400"
           />
         </div>
 
         <div class="mt-4">
-          <label for="message" class="text-black text-sm font-semibold"
-            >Message</label
-          >
+          <label for="message" class="text-gray-700 text-sm">Message</label>
           <textarea
             id="message"
             v-model="contactForm.message"
+            placeholder="Enter your message here..."
             rows="4"
-            class="w-full border border-gray-300 rounded-md p-2 mt-1 text-black font-bold"
+            class="w-full border border-gray-300 rounded-md p-2 mt-1 text-black placeholder-gray-400"
           ></textarea>
         </div>
 

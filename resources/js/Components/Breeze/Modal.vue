@@ -8,7 +8,7 @@ const props = defineProps({
   },
   maxWidth: {
     type: String,
-    default: '2xl',
+    default: 'md',
   },
   closeable: {
     type: Boolean,
@@ -80,7 +80,7 @@ const maxWidthClass = computed(() => {
             class="fixed inset-0 transform transition-all"
             @click="close"
           >
-            <div class="absolute inset-0 bg-gray-500 opacity-75" />
+            <div class="absolute inset-0 bg-primary-1000 opacity-90" />
           </div>
         </Transition>
 
