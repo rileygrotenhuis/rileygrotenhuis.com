@@ -16,12 +16,12 @@ import SendContactMessage from '@/Pages/Home/Partials/SendContactMessage.vue';
 
     <div class="w-full">
       <h2 class="text-white font-bold text-3xl mb-4">A bit about me</h2>
-      <p class="text-white text-sm font-semibold mb-2">
+      <p class="text-white text-sm mb-2">
         I am the creator, and sole developer behind Corvesive. I currently work
         for Midwestern Interactive as a software engineer, but have a little
         over 3 years of professional experience in the industry.
       </p>
-      <p class="text-white text-sm font-semibold mb-4">
+      <p class="text-white text-sm mb-4">
         I’m excited to share Corvesive with you all as it’s been my passion
         project, and has seen multiple iterations for the better part of 2
         years. I hope to make your every day budgeting needs a little bit easier
