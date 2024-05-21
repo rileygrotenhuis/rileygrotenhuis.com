@@ -15,15 +15,17 @@ import SendContactMessage from '@/Pages/Home/Partials/SendContactMessage.vue';
     </div>
 
     <div class="w-full">
-      <h2 class="text-white font-bold text-3xl mb-4">A little about me</h2>
+      <h2 class="text-white font-bold text-2xl mb-4">
+        A little more about me.
+      </h2>
       <p class="text-white text-sm mb-2">
         My name is Riley Grotenhuis and I'm a software engineer based out of
         Springfield, Missouri. I currently work for Midwestern Interactive, and
         have been in the industry for over 3 years.
       </p>
-      <p class="text-white text-sm mb-2">
+      <p class="text-white text-sm mb-4">
         I specialize in building full-stack web applications. Here are a few of
-        the technologies I've been building with recently:
+        the technologies I've been building with recently.
       </p>
       <div
         class="flex items-center flex-wrap justify-center sm:justify-start gap-4 mb-4"
