@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full bg-white mt-96">
+  <div class="w-full bg-white">
     <div
       class="max-w-4xl mx-auto px-8 py-8 flex flex-wrap-reverse justify-center items-center gap-8"
     >
