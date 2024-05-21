@@ -1,6 +1,5 @@
 <script setup>
 import GithubIcon from '@/Components/Icons/GithubIcon.vue';
-import LinkedInIcon from '@/Components/Icons/LinkedInIcon.vue';
 </script>
 
 <template>
@@ -27,7 +26,6 @@ import LinkedInIcon from '@/Components/Icons/LinkedInIcon.vue';
 
       <div class="flex gap-4 justify-end mt-2">
         <GithubIcon />
-        <LinkedInIcon />
       </div>
     </div>
   </footer>
