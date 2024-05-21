@@ -9,8 +9,8 @@ import AboutSection from '@/Pages/Home/Partials/AboutSection.vue';
 <template>
   <MainLayout>
     <Landing />
+    <AboutSection />
     <CorvesiveBanner />
     <ProjectsBanner />
-    <AboutSection />
   </MainLayout>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <div class="w-full bg-white">
     <div
-      class="max-w-4xl mx-auto px-8 py-8 flex flex-wrap-reverse justify-center items-center gap-8"
+      class="max-w-4xl mx-auto px-8 py-12 sm:py-8 flex flex-wrap-reverse justify-center items-center gap-8"
     >
       <div>
         <h3 class="text-primary-950 text-2xl font-bold mb-2 max-w-[375px]">

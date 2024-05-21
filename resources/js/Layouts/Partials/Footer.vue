@@ -1,0 +1,32 @@
+<script setup>
+import GithubIcon from '@/Components/Icons/GithubIcon.vue';
+import LinkedInIcon from '@/Components/Icons/LinkedInIcon.vue';
+</script>
+
+<template>
+  <footer class="max-w-4xl mx-auto px-8 py-60 pb-24 flex justify-between">
+    <div>
+      <h1 class="text-white text-3xl font-bold">Riley Grotenhuis.</h1>
+      <p class="text-white font-semibold text-sm max-w-[250px]">
+        Software Engineer based in
+        <span class="text-primary-500">Springfield, Missouri.</span>
+      </p>
+    </div>
+
+    <div>
+      <div>
+        <a
+          href="https://www.rileygrotenhuis.com"
+          class="text-white font-bold text-lg"
+        >
+          rileygrotenhuis.com
+        </a>
+      </div>
+
+      <div class="flex gap-4 justify-end mt-2">
+        <GithubIcon />
+        <LinkedInIcon />
+      </div>
+    </div>
+  </footer>
+</template>

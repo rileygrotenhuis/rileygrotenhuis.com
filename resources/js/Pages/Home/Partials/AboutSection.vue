@@ -4,7 +4,7 @@ import SendContactMessage from '@/Pages/Home/Partials/SendContactMessage.vue';
 
 <template>
   <div
-    class="max-w-4xl mx-auto px-8 py-12 sm:py-24 flex flex-col sm:flex-row justify-center items-center gap-8"
+    class="max-w-4xl mx-auto px-8 pb-36 flex flex-col sm:flex-row justify-center items-center gap-8"
   >
     <div>
       <img

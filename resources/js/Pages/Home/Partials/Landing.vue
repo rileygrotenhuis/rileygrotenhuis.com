@@ -9,7 +9,7 @@ const learnMoreScroll = () => {
 
 <template>
   <div
-    class="max-w-4xl h-[100vh] sm:h-[60vh] mx-auto px-8 flex justify-between mt-32 sm:mt-48 gap-12"
+    class="max-w-4xl h-[100vh] sm:h-[65vh] mx-auto px-8 flex justify-between mt-32 sm:mt-48 gap-12"
   >
     <div class="hidden sm:block">
       <img src="/images/hero.svg" alt="Hero Image" class="w-[400px]" />
