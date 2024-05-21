@@ -4,8 +4,10 @@
       class="max-w-4xl mx-auto px-8 py-8 flex flex-wrap-reverse justify-center items-center gap-8"
     >
       <div>
-        <h3 class="text-primary-950 text-2xl font-bold mb-2">
-          Budgeting made simple.
+        <h3 class="text-primary-950 text-2xl font-bold mb-2 max-w-[375px]">
+          Budgeting made simple
+          <br />
+          with <span class="text-primary-700">Corvesive.</span>
         </h3>
         <p class="text-primary-950 text-base mb-4 max-w-[400px]">
           Record your personal finances and view your money in the way that you
