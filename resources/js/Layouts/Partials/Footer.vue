@@ -4,7 +4,9 @@ import LinkedInIcon from '@/Components/Icons/LinkedInIcon.vue';
 </script>
 
 <template>
-  <footer class="max-w-4xl mx-auto px-8 py-60 pb-24 flex justify-between">
+  <footer
+    class="max-w-4xl mx-auto px-8 py-60 pb-24 flex justify-center sm:justify-between gap-16 flex-wrap"
+  >
     <div>
       <h1 class="text-white text-3xl font-bold">Riley Grotenhuis.</h1>
       <p class="text-white font-semibold text-sm max-w-[250px]">
