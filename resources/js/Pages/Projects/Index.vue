@@ -119,7 +119,7 @@ const currentProject = computed(() => {
           class="flex justify-start items-center flex-wrap gap-8 mt-8"
         >
           <component
-            v-nfor="(icon, index) in currentProject.stack"
+            v-for="(icon, index) in currentProject.stack"
             :key="index"
             :is="icon"
           />
