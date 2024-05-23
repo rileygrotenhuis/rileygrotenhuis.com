@@ -25,7 +25,9 @@ import GithubIcon from '@/Components/Icons/GithubIcon.vue';
       </div>
 
       <div class="flex gap-4 justify-end mt-2">
-        <GithubIcon />
+        <a href="https://github.com/rileygrotenhuis" target="_blank">
+          <GithubIcon />
+        </a>
       </div>
     </div>
   </footer>
