@@ -94,11 +94,11 @@ const currentProject = computed(() => {
         @updateCurrentProject="selectedProject = $event"
       />
 
-      <div class="w-full mt-16">
+      <div class="w-full mt-8">
         <div class="flex justify-between items-center mb-8">
           <a :href="currentProject.prodUrl" target="_blank">
             <h2
-              class="text-3xl font-semibold text-white hover:text-primary-700 transition-all ease-in-out"
+              class="text-3xl max-w-[250px] sm:max-w-full font-semibold text-white hover:text-primary-700 transition-all ease-in-out"
             >
               {{ currentProject.name }}
             </h2>

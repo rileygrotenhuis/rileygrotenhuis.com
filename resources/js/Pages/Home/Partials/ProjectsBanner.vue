@@ -20,8 +20,7 @@
           side projects as I find the time.
         </p>
         <a
-          href="https://github.com/rileygrotenhuis"
-          target="_blank"
+          href="/projects"
           class="text-white bg-primary-700 px-4 py-2 rounded-md mt-4 font-semibold hover:bg-primary-500"
         >
           My projects
