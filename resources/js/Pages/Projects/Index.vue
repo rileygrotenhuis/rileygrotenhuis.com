@@ -21,8 +21,11 @@ const projects = ref([
     name: 'Corvesive',
     prodUrl: 'https://corvesive.com',
     githubUrl: 'https://github.com/rileygrotenhuis/corvesive',
-    actionText: 'Get started',
-    content: [],
+    actionText: 'Check it out',
+    content: [
+      'Corvesive is an online budgeting application that allows you to record your personal finances, and view your money in the way that you want to see it. Customize how you visualize your monthly income and monitor every aspect of your monthly expenses, so you can spend the money that you KNOW you have.',
+      "The project is fully functional, but the user experience needs significant improvement… this is mostly due to the fact that I’m the only user, but I’m hoping to change that soon. I'm actively developing a major update to vastly improve the user experience and make the project more accessible and enjoyable for a wider audience. Stay tuned for exciting new features and improvements in the upcoming release!",
+    ],
     stack: [
       markRaw(PhpIcon),
       markRaw(LaravelIcon),
@@ -38,7 +41,7 @@ const projects = ref([
     name: 'AirQueue',
     prodUrl: 'https://airqueue.live',
     githubUrl: 'https://github.com/rileygrotenhuis/airqueue',
-    actionText: 'Get started',
+    actionText: 'Start a session',
     content: [
       'AirQueue is an online platform that easily allows you to get live song recommendations and send recommendations to your friends as well. Simply register an account, connect your Spotify account, and then start up a live session with your friends. View the incoming stream of song recommendations for you and then approve them to be added to your live Spotify player’s queue to listen to!',
       'This project has had many different variations over the past few years as the initial inspiration was a way for hosts to manage numerous song requests at live events (a wedding for example). Getting this project right has been in the back of my mind for the last several years, and I feel with this current version I can finally lay those thoughts to rest. While I don’t plan on adding any major features in the near future I plan on doing my best to maintain it so it’s at least in a usable state.',
@@ -58,11 +61,10 @@ const projects = ref([
     name: 'rbranch',
     prodUrl: 'https://github.com/rileygrotenhuis/rbranch',
     githubUrl: 'https://github.com/rileygrotenhuis/rbranch',
-    actionText: 'View on Github',
+    actionText: 'Install from Github',
     content: [
       'rbranch is a CLI tool built using Go and Bubbletea for those who are too lazy to type out those super long and annoying git branch names. Making your life maybe 2% easier, you can now simply use the "rbranch" with a few additional flags to easily perform simple git branch operations.',
       'The inspiration for this project was born from the pain of a certain, unnamed project management software and how it integrates with Github projects. To connect a task card to a specific git branch, you could include the UUID for that specific task in the naming of the git branch. Which I’m sure you could imagine gets quite annoying when you are switching branches on a consistent basis.',
-      'So instead of switching my entire workflow over to using a popular git GUI, I built this custom CLI tool.',
     ],
     stack: [markRaw(GoIcon), markRaw(GitIcon)],
   },
@@ -70,7 +72,7 @@ const projects = ref([
     name: 'Laravel Ecosystem',
     prodUrl: 'https://www.youtube.com/watch?v=kHjGp0Xtinw',
     githubUrl: 'https://github.com/rileygrotenhuis/the-laravel-ecosystem',
-    actionText: 'Watch it now!',
+    actionText: 'Watch the talk',
     content: [
       'In March of 2024 I spoke at the eFactory in Springfield, Missouri for a SGF Devs Tech Talk to discuss the Laravel framework and it’s surrounding ecosystem of packages. I performed a live coding demo, creating a new Laravel application from scratch to show how easy it is to integrate different features and services into your project. This was all to showcase the vast library of first-party supported packages, and how powerful Laravel can be.',
     ],
